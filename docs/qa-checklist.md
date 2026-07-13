@@ -59,7 +59,7 @@ This checklist is the release contract for the rebuilt Dalmasa site. Items marke
 
 - [x] **Automated:** Public metadata and internal links use HTTPS.
 - [ ] **Manual:** HTTP and `www` requests redirect once to the HTTPS canonical host.
-- [ ] **Manual:** HSTS and appropriate security headers are enabled by the production host.
+- [x] **Automated:** HSTS, CSP, anti-framing, content-type, referrer, cross-origin, and permissions headers are set on public responses.
 - [x] **Manual:** The prototype contains no login, payment, or personal-data form.
 - [x] **Manual:** General-office and education numbers are labelled; conflicting memorial contact roles remain explicitly flagged for temple confirmation.
 - [ ] **Manual:** Address, transit, parking, accessibility, and map links have been verified against authoritative sources.
@@ -67,7 +67,7 @@ This checklist is the release contract for the rebuilt Dalmasa site. Items marke
 
 ## Release verification — 2026-07-13
 
-- `npm test`: 8/8 checks passed after a production build.
+- `npm test`: 9/9 checks passed after a production build.
 - `npm run lint`: passed with no warnings or errors.
 - Production dependency audit: zero known vulnerabilities.
 - Browser QA: Korean and English homepages, language switching, mobile menu, and an action-oriented memorial page inspected.

@@ -483,3 +483,13 @@ test("publishes favicon, manifest, robots, sitemap, and social identity", async 
   assert.match(robots, /Sitemap:\s*https:\/\//i);
   assert.doesNotMatch(robots, /Sitemap:\s*http:\/\//i);
 });
+
+test("adds browser security and privacy headers", async () => {
+  const response = await request("/en");
+  assert.match(response.headers.get("strict-transport-security") ?? "", /max-age=31536000/i);
+  assert.equal(response.headers.get("x-content-type-options"), "nosniff");
+  assert.equal(response.headers.get("x-frame-options"), "DENY");
+  assert.equal(response.headers.get("referrer-policy"), "strict-origin-when-cross-origin");
+  assert.match(response.headers.get("permissions-policy") ?? "", /camera=\(\)/i);
+  assert.match(response.headers.get("content-security-policy") ?? "", /frame-ancestors 'none'/i);
+});
