@@ -1,0 +1,5027 @@
+{
+  "inventoryVersion": 1,
+  "sourceCheckedAt": "2026-07-13T17:00:00+09:00",
+  "sourceSite": "https://dalmasa.org",
+  "scope": {
+    "liveSitemapEntries": 33,
+    "liveRoutesReturning200": 33,
+    "migratedCanonicalPagesPerLocale": 33,
+    "uniqueLiveContentExperiences": 27,
+    "intentionalNewPagesPerLocale": 1,
+    "newPage": {
+      "ko": "/ko/visit",
+      "en": "/en/visit"
+    },
+    "expectedBilingualCanonicalPagesTotal": 68,
+    "explanation": "33 migrated pages x 2 locales, plus one new Plan Your Visit page x 2 locales. The six duplicated live parent routes become distinct section landings in the rebuild."
+  },
+  "globalFacts": {
+    "name": {
+      "ko": "대한불교조계종 흑석동 달마사",
+      "en": "Dalmasa Temple, Heukseok-dong (Jogye Order of Korean Buddhism)"
+    },
+    "address": {
+      "ko": "서울특별시 동작구 서달로 50-26(흑석동)",
+      "en": "50-26 Seodal-ro, Dongjak-gu, Seoul, Republic of Korea"
+    },
+    "contactsPublishedInFooter": [
+      {
+        "role": "general-office",
+        "labelKo": "종무소(접수 문의)",
+        "labelEn": "General office and registration",
+        "phone": "02-813-7425"
+      },
+      {
+        "role": "education-office",
+        "labelKo": "교육국(교육 문의)",
+        "labelEn": "Education office",
+        "phone": "010-8574-7475"
+      },
+      {
+        "role": "memorial-office",
+        "labelKo": "봉안당(안치 문의)",
+        "labelEn": "Memorial hall and enshrinement",
+        "phone": "010-4803-8771"
+      }
+    ],
+    "additionalMemorialNumberPublishedOnPages41To43": "02-822-8771",
+    "hoursPublishedInFooter": [
+      {
+        "role": "general-office",
+        "hoursKo": "08:00-17:00",
+        "hoursEn": "8:00 AM–5:00 PM"
+      },
+      {
+        "role": "memorial-office",
+        "hoursKo": "09:00-17:00 (점심시간 11:30-12:30)",
+        "hoursEn": "9:00 AM–5:00 PM (lunch 11:30 AM–12:30 PM)"
+      }
+    ],
+    "officialLinksObserved": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@dalmasa"
+      },
+      {
+        "label": "Dalmasa Instagram",
+        "url": "https://www.instagram.com/dalmasa01/"
+      },
+      {
+        "label": "Young adult Instagram",
+        "url": "https://www.instagram.com/dalmajigi"
+      },
+      {
+        "label": "Dalmasa Facebook",
+        "url": "https://www.facebook.com/people/%EB%8B%AC%EB%A7%88%EC%82%AC/pfbid02icnRVBpS4zrU6Js7T9ExF8oXwV9V1oAw1yBQCi4pLNfUku88QG6rYzmURE3svh6pl/"
+      },
+      {
+        "label": "Naver Blog",
+        "url": "https://blog.naver.com/dalmasa1931"
+      }
+    ]
+  },
+  "sourceFindings": [
+    {
+      "severity": "critical",
+      "finding": "The live HTTP login route serves a password form without HTTPS enforcement; all rebuild traffic must be HTTPS-only with secure cookies and HSTS."
+    },
+    {
+      "severity": "high",
+      "finding": "All 33 live pages use the same HTML title '달마사'; 32 share the same generic description; all 33 canonical tags and all sitemap locations use http://."
+    },
+    {
+      "severity": "high",
+      "finding": "Six top-level legacy routes exactly duplicate their first child: /18=/19, /24=/25, /31=/33, /34=/48, /36=/37, /40=/41. Rebuild them as distinct section landings, not duplicated bodies."
+    },
+    {
+      "severity": "high",
+      "finding": "/35 differs by breakpoint: mobile says Saturday 1–3 PM; desktop says Saturday and Sunday 1–3 PM. Canonical recommendation is Saturday only, subject to education-office confirmation."
+    },
+    {
+      "severity": "high",
+      "finding": "/46 differs by breakpoint: mobile says Buddhist College graduates and 3 months; desktop adds any meditation-interested member and 3–4 months. Canonical recommendation is the conservative mobile version, subject to confirmation."
+    },
+    {
+      "severity": "high",
+      "finding": "The memorial pages use 02-822-8771 while the global footer labels 010-4803-8771 for memorial inquiries. Do not choose between them until the temple assigns a purpose to each number."
+    },
+    {
+      "severity": "high",
+      "finding": "/contact is an unfinished English template ('Get In Touch' and generic placeholder copy) rather than a trustworthy contact page."
+    },
+    {
+      "severity": "medium",
+      "finding": "/27 appears to reverse the labels/dates for summer and winter retreats; temple confirmation is required before publication."
+    },
+    {
+      "severity": "medium",
+      "finding": "Across page-specific widgets there are 80 unique images; 78 have empty alt text. The five homepage background images also lack semantic alt text."
+    },
+    {
+      "severity": "medium",
+      "finding": "/42 has only an image and phone prompt; /39's volunteer page contains education posts; /43 republishes named remembrance letters without a visible moderation/privacy explanation."
+    }
+  ],
+  "responsiveCanonicalDecisions": [
+    {
+      "legacyPath": "/35",
+      "useKo": "주말반 | 매주 토요일 오후 1시~3시",
+      "useEn": "Weekend class | Saturdays, 1:00–3:00 PM",
+      "confidence": "provisional",
+      "reason": "newer mobile widget and current homepage Saturday opening"
+    },
+    {
+      "legacyPath": "/46",
+      "useKo": "불교대학 졸업생 대상; 교육기간 3개월",
+      "useEn": "For Buddhist College graduates; three-month course",
+      "confidence": "provisional",
+      "reason": "newer, narrower mobile wording avoids unsupported eligibility expansion"
+    }
+  ],
+  "newVisitPageGuidance": {
+    "canonicalPaths": {
+      "ko": "/ko/visit",
+      "en": "/en/visit"
+    },
+    "title": {
+      "ko": "방문 안내",
+      "en": "Plan Your Visit"
+    },
+    "sourceLegacyPages": [
+      "/23",
+      "/26",
+      "/33",
+      "/contact"
+    ],
+    "requiredSections": [
+      "Today's/open status",
+      "Address and map apps",
+      "Subway and bus directions",
+      "Parking and accessibility",
+      "Arrival and temple etiquette",
+      "Service times",
+      "General-office contact"
+    ],
+    "unverifiedDoNotInvent": [
+      "parking availability",
+      "drop-off rules",
+      "wheelchair route",
+      "slope and stair detail",
+      "restrooms",
+      "photography policy",
+      "dress guidance",
+      "English-language support"
+    ]
+  },
+  "migratedPages": [
+    {
+      "id": "home",
+      "legacyPath": "/index",
+      "liveUrl": "https://dalmasa.org/index",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/index",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko",
+        "en": "/en"
+      },
+      "title": {
+        "ko": "달마사",
+        "en": "Dalmasa Temple"
+      },
+      "section": "utility",
+      "template": "home",
+      "sourceKorean": {
+        "activeMenu": [],
+        "headings": [
+          "달마사 공지",
+          "달마사",
+          "주요소식",
+          "봉사부",
+          "갤러리"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 공지"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "newest",
+            "blocks": [
+              "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내 [기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내 2026-06-30 달마사 [교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내 [교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내 2026-06-06 달마사 [교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내 [교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내 2026-06-06 달마사 [기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내 [기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내 2026-06-06 달마사 [공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표 [공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표 2026-05-17 달마사 [공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감 [공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감 2026-05-01 달마사"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 공지사항 더보기"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 주요일정"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 공지"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "newest",
+            "blocks": [
+              "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내 [기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내 달마사 [교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내 [교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내 달마사 [교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내 [교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내 달마사 [기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내 [기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내 달마사 [공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표 [공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표 달마사 [공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감 [공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감 달마사 [기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내 [기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내 달마사 [법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내 [법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내 달마사 [교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내 [교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내 달마사 [기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내 [기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내 달마사"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 공지사항 더보기"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 소식"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "newest",
+            "blocks": [
+              "달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행 달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행 2025-10-05 달마사 불기 2569(2025)년 달마사 부처님 오신 날 불기 2569(2025)년 달마사 부처님 오신 날 2025-05-09 달마사 불기 2568(2024)년 달마사 정초합동 천도재 봉행 불기 2568(2024)년 달마사 정초합동 천도재 봉행 2024-02-24 달마사 불기 2568(2024)년 2월 선지식초청 일요법회 - 원통스님 불기 2568(2024)년 2월 선지식초청 일요법회 - 원통스님 2024-02-18 달마사 [신중기도] 불기2566년 음력2월 신중기도 봉행(22.03.03) [신중기도] 불기2566년 음력2월 신중기도 봉행(22.03.03) 2023-12-14 달마사 [동지기도] 동지기도 사진 [동지기도] 동지기도 사진 2023-12-14 달마사"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 주요소식 더보기"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 갤러리"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "newest",
+            "blocks": [
+              "신축년3월 산신기도 법회_()_ 1 0 달마사 2023-11-28 조회 1995 신축년 3월 초하루 신중기도 법회_()_ 1 0 달마사 2023-11-28 조회 1420"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 갤러리 더보기"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사",
+              "주요소식"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "newest",
+            "blocks": [
+              "달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행 불기 2569(2025)년 달마사 부처님 오신 날 불기 2568(2024)년 달마사 정초합동 천도재 봉행"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 주요소식 더보기"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사",
+              "봉사부"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "newest",
+            "blocks": [
+              "달마사 불교대학 홍보 불교대학 1기 입학식 및 개강 달마사 - 05기 수계식 2탄"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 봉사부 소식 더보기"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사",
+              "갤러리"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "newest",
+            "blocks": [
+              "신축년3월 산신기도 법회_()_ 신축년 3월 초하루 신중기도 법회_()_ 신축년 3월 초하루 신중기도법회_()_"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 갤러리 사진 더보기"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A welcoming introduction to Dalmasa, a Jogye Order temple in Heukseok-dong, with current schedules, notices, learning, and visit actions.",
+        "sectionsEn": [
+          "Current service notice",
+          "Welcome hero",
+          "This week at Dalmasa",
+          "First visit",
+          "Prayer and learning",
+          "Latest notices and stories",
+          "Directions and contacts"
+        ],
+        "editorial": "Replace the five-slide carousel with one timeless temple hero and dated cards for current notices. Never hard-code a dated event in the hero without an expiry date."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231208/5c6b889f3156f.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231208/d27e8fb0b0472.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231208/26a12f8b47767.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231208/aa1afde39116d.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/8fb8e826409c1.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/476b02d3ecd90.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/0c873c01159bc.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20260606/f7905da5318be.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231214/dca9e40fef2bc.png",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내 [기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내",
+          "href": "https://dalmasa.org/37/?idx=172105862&bmode=view"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내 [교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내",
+          "href": "https://dalmasa.org/37/?idx=171657250&bmode=view"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내 [교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내",
+          "href": "https://dalmasa.org/37/?idx=171657231&bmode=view"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내 [기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내",
+          "href": "https://dalmasa.org/37/?idx=171657189&bmode=view"
+        },
+        {
+          "text": "[공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표 [공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표",
+          "href": "https://dalmasa.org/37/?idx=171321835&bmode=view"
+        },
+        {
+          "text": "[공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감 [공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감",
+          "href": "https://dalmasa.org/37/?idx=171248936&bmode=view"
+        },
+        {
+          "text": "달마사 공지사항 더보기",
+          "href": "https://dalmasa.org/37"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내 [기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내",
+          "href": "https://dalmasa.org/37/?idx=170807998&bmode=view"
+        },
+        {
+          "text": "[법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내 [법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내",
+          "href": "https://dalmasa.org/37/?idx=170699304&bmode=view"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내 [교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내",
+          "href": "https://dalmasa.org/37/?idx=170482786&bmode=view"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내 [기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내",
+          "href": "https://dalmasa.org/37/?idx=169798787&bmode=view"
+        },
+        {
+          "text": "달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행 달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행",
+          "href": "https://dalmasa.org/38/?idx=168135863&bmode=view"
+        },
+        {
+          "text": "불기 2569(2025)년 달마사 부처님 오신 날 불기 2569(2025)년 달마사 부처님 오신 날",
+          "href": "https://dalmasa.org/38/?idx=163629536&bmode=view"
+        },
+        {
+          "text": "불기 2568(2024)년 달마사 정초합동 천도재 봉행 불기 2568(2024)년 달마사 정초합동 천도재 봉행",
+          "href": "https://dalmasa.org/38/?idx=18326892&bmode=view"
+        },
+        {
+          "text": "불기 2568(2024)년 2월 선지식초청 일요법회 - 원통스님 불기 2568(2024)년 2월 선지식초청 일요법회 - 원통스님",
+          "href": "https://dalmasa.org/38/?idx=18138111&bmode=view"
+        },
+        {
+          "text": "[신중기도] 불기2566년 음력2월 신중기도 봉행(22.03.03) [신중기도] 불기2566년 음력2월 신중기도 봉행(22.03.03)",
+          "href": "https://dalmasa.org/38/?idx=17261960&bmode=view"
+        },
+        {
+          "text": "[동지기도] 동지기도 사진 [동지기도] 동지기도 사진",
+          "href": "https://dalmasa.org/38/?idx=17261949&bmode=view"
+        },
+        {
+          "text": "달마사 주요소식 더보기",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "신축년3월 산신기도 법회_()_ 1 0 달마사 2023-11-28 조회 1995",
+          "href": "https://dalmasa.org/47/?idx=17045376&bmode=view"
+        },
+        {
+          "text": "신축년 3월 초하루 신중기도 법회_()_ 1 0 달마사 2023-11-28 조회 1420",
+          "href": "https://dalmasa.org/47/?idx=17045331&bmode=view"
+        },
+        {
+          "text": "달마사 갤러리 더보기",
+          "href": "https://dalmasa.org/47"
+        },
+        {
+          "text": "달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행",
+          "href": "https://dalmasa.org/38/?idx=168135863&bmode=view"
+        },
+        {
+          "text": "불기 2569(2025)년 달마사 부처님 오신 날",
+          "href": "https://dalmasa.org/38/?idx=163629536&bmode=view"
+        },
+        {
+          "text": "불기 2568(2024)년 달마사 정초합동 천도재 봉행",
+          "href": "https://dalmasa.org/38/?idx=18326892&bmode=view"
+        },
+        {
+          "text": "달마사 불교대학 홍보",
+          "href": "https://dalmasa.org/39/?idx=140338358&bmode=view"
+        },
+        {
+          "text": "불교대학 1기 입학식 및 개강",
+          "href": "https://dalmasa.org/39/?idx=18306568&bmode=view"
+        },
+        {
+          "text": "달마사 - 05기 수계식 2탄",
+          "href": "https://dalmasa.org/39/?idx=18306025&bmode=view"
+        },
+        {
+          "text": "달마사 봉사부 소식 더보기",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "신축년3월 산신기도 법회_()_",
+          "href": "https://dalmasa.org/47/?idx=17045376&bmode=view"
+        },
+        {
+          "text": "신축년 3월 초하루 신중기도 법회_()_",
+          "href": "https://dalmasa.org/47/?idx=17045331&bmode=view"
+        },
+        {
+          "text": "신축년 3월 초하루 신중기도법회_()_",
+          "href": "https://dalmasa.org/47/?idx=17045316&bmode=view"
+        },
+        {
+          "text": "달마사 갤러리 사진 더보기",
+          "href": "https://dalmasa.org/38"
+        }
+      ],
+      "sourceHeroSlides": [
+        {
+          "titleKo": "진리의 실천도량 — 대한불교조계종 흑석동 달마사",
+          "titleEn": "A place to put truth into practice — Dalmasa Temple in Heukseok-dong",
+          "image": "https://cdn.imweb.me/thumbnail/20260606/330b7ad403bab.jpg"
+        },
+        {
+          "titleKo": "우란분절 백중 49일 지장기도",
+          "titleEn": "Baekjung 49-day Ksitigarbha prayer",
+          "dateKo": "입재 2026년 7월 10일(금) 오전 9시",
+          "dateEn": "Opening: Fri, Jul 10, 2026, 9:00 AM",
+          "image": "https://cdn.imweb.me/thumbnail/20260606/4df7aff7bf4b5.png",
+          "sourceLink": "https://dalmasa.org/37/?idx=171657189&bmode=view"
+        },
+        {
+          "titleKo": "신묘장구대다라니 천일대정진기도",
+          "titleEn": "1,000-Day Great Dharani Practice",
+          "dateKo": "400일차 2026년 8월 1일(토) 오후 2시",
+          "dateEn": "Day 400: Sat, Aug 1, 2026, 2:00 PM",
+          "image": "https://cdn.imweb.me/thumbnail/20251005/4ad0294a03bad.png",
+          "sourceLink": "https://dalmasa.imweb.me/37/?idx=165343402&bmode=view"
+        },
+        {
+          "titleKo": "기본교육·금강경 개강",
+          "titleEn": "Buddhist Foundations and Diamond Sutra courses",
+          "dateKo": "기본교육 9월 5일(토) 오후 1시; 금강경 8월 19일(수) 오후 1시/7시",
+          "dateEn": "Foundations: Sat, Sep 5, 1:00 PM; Diamond Sutra: Wed, Aug 19, 1:00/7:00 PM",
+          "image": "https://cdn.imweb.me/thumbnail/20260606/0efba169f0920.jpg"
+        },
+        {
+          "titleKo": "제1차 수능·학업성취 백일기도",
+          "titleEn": "First 100-day prayer for academic achievement",
+          "dateKo": "입재 2026년 8월 11일(화) 오전 10시; 회향 11월 18일(수) 오전 10시",
+          "dateEn": "Opening: Tue, Aug 11, 2026, 10:00 AM; completion: Wed, Nov 18, 2026, 10:00 AM",
+          "image": "https://cdn.imweb.me/thumbnail/20260205/612475dd6654f.png",
+          "sourceLink": "https://dalmasa.org/37/?idx=172105862&bmode=view"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "legacyPath": "/contact",
+      "liveUrl": "https://dalmasa.org/contact",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/contact",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/contact",
+        "en": "/en/contact"
+      },
+      "title": {
+        "ko": "문의하기",
+        "en": "Contact & Inquiries"
+      },
+      "section": "utility",
+      "template": "contact",
+      "sourceKorean": {
+        "activeMenu": [],
+        "headings": [
+          "Get In Touch"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "Get In Touch",
+              "I'm a paragraph. Click here to add your own text and edit me."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "form",
+            "blocks": [
+              "NameMobileContents SEND 확인"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A role-based contact directory for the general office, education office, and memorial hall, with opening hours and response expectations.",
+        "sectionsEn": [
+          "Choose an inquiry",
+          "Office contacts",
+          "Opening hours",
+          "Address and directions",
+          "Optional consent-aware form"
+        ],
+        "editorial": "The live page is an unfinished English template. Do not preserve its placeholder paragraph or nonfunctional form; use the verified footer details instead."
+      },
+      "sourceImages": [],
+      "sourceLinks": []
+    },
+    {
+      "id": "about",
+      "legacyPath": "/18",
+      "liveUrl": "https://dalmasa.org/18",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/19",
+      "sourceExperienceDuplicateOf": "/19",
+      "canonicalPaths": {
+        "ko": "/ko/about",
+        "en": "/en/about"
+      },
+      "title": {
+        "ko": "달마사 소개",
+        "en": "About Dalmasa"
+      },
+      "section": "about",
+      "template": "section-landing",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 역사"
+        ],
+        "headings": [
+          "달마사의 역사",
+          "연혁"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사의 역사"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "북한산에서 남산을 거쳐 관악산으로 이어지는 녹색축의 허리를 이루는 중요한 산인 서달산이 감싸고 있는 달마사는",
+              "계절의 변화에 따라 달라지는 아름다운 자연을 누리며 한강과 남산을 조망할 수 있는 도량입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "연혁"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "1931 유심스님 창건",
+              "1962 대한불교조계종 등록",
+              "1968 대웅전 신축, 다보탑 조성",
+              "1970 유심스님 입적, 법능스님 창건주 승계",
+              "1987 대웅전 중건",
+              "1988 전통사찰 지정",
+              "1999 종림스님 창건주 승계"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "2000 경암스님 주지",
+              "2003 호산스님 주지",
+              "2009 - 2012 사운당, 자인당, 자하루 일주문 신축",
+              "2014 대웅전 신축 착공",
+              "2015 진화스님 창건주 승계",
+              "덕일스님 주지 취임",
+              "2016 남일스님 주지 취임",
+              "대웅전 완공 이전",
+              "(구)대웅전 극락전으로 개칭",
+              "2017 1차 천일기도 입재",
+              "극락전 영구위패단 제작 완공",
+              "대웅전 현판, 주련 제작 설치",
+              "2018 본동복지관 수탁",
+              "대웅전 석가모니불 조성 점안",
+              "일행스님 주지 취임",
+              "일주문 개축 공사 착공",
+              "일주문 불사 준공",
+              "2019 상교정본 자비도량참법 권 3 보물 지정(보물 제875-3호)",
+              "지하식당 내부공사 준공",
+              "대웅전 인등설치"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "2020 2차 천일기도 입재",
+              "2021 전통문화체험관, 극락전, 영월당 착공",
+              "2022 전통문화체험관, 극락전, 영월당 착공",
+              "전통문화체험관, 극락전, 영월당 준공"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Start here to learn about Dalmasa's setting on Seodal Mountain, its history, vision, abbot, temple halls, and location.",
+        "sectionsEn": [
+          "Dalmasa at a glance",
+          "History",
+          "Vision",
+          "Greeting from the abbot",
+          "Temple halls",
+          "Plan a visit"
+        ],
+        "editorial": "This is a new section landing derived from a live duplicate of /19; do not repeat the complete history page."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231027/615247e48cd25.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/cdff32e28c1a9.jpg",
+          "alt": "1968년 신축 대웅전",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/2789781cc598b.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/f10a9676861a5.jpg",
+          "alt": "대웅전 석가모니불",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/17037920f9289.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/fda1d92a4a9a6.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 역사",
+          "href": "https://dalmasa.org/19"
+        },
+        {
+          "text": "달마사 비전",
+          "href": "https://dalmasa.org/20"
+        },
+        {
+          "text": "주지스님 인사말",
+          "href": "https://dalmasa.org/21"
+        },
+        {
+          "text": "전각 안내",
+          "href": "https://dalmasa.org/22"
+        },
+        {
+          "text": "오시는 길",
+          "href": "https://dalmasa.org/23"
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "legacyPath": "/19",
+      "liveUrl": "https://dalmasa.org/19",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/19",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/about/history",
+        "en": "/en/about/history"
+      },
+      "title": {
+        "ko": "달마사 역사",
+        "en": "History"
+      },
+      "section": "about",
+      "template": "story-timeline",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 역사"
+        ],
+        "headings": [
+          "달마사의 역사",
+          "연혁"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사의 역사"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "북한산에서 남산을 거쳐 관악산으로 이어지는 녹색축의 허리를 이루는 중요한 산인 서달산이 감싸고 있는 달마사는",
+              "계절의 변화에 따라 달라지는 아름다운 자연을 누리며 한강과 남산을 조망할 수 있는 도량입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "연혁"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "1931 유심스님 창건",
+              "1962 대한불교조계종 등록",
+              "1968 대웅전 신축, 다보탑 조성",
+              "1970 유심스님 입적, 법능스님 창건주 승계",
+              "1987 대웅전 중건",
+              "1988 전통사찰 지정",
+              "1999 종림스님 창건주 승계"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "2000 경암스님 주지",
+              "2003 호산스님 주지",
+              "2009 - 2012 사운당, 자인당, 자하루 일주문 신축",
+              "2014 대웅전 신축 착공",
+              "2015 진화스님 창건주 승계",
+              "덕일스님 주지 취임",
+              "2016 남일스님 주지 취임",
+              "대웅전 완공 이전",
+              "(구)대웅전 극락전으로 개칭",
+              "2017 1차 천일기도 입재",
+              "극락전 영구위패단 제작 완공",
+              "대웅전 현판, 주련 제작 설치",
+              "2018 본동복지관 수탁",
+              "대웅전 석가모니불 조성 점안",
+              "일행스님 주지 취임",
+              "일주문 개축 공사 착공",
+              "일주문 불사 준공",
+              "2019 상교정본 자비도량참법 권 3 보물 지정(보물 제875-3호)",
+              "지하식당 내부공사 준공",
+              "대웅전 인등설치"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "2020 2차 천일기도 입재",
+              "2021 전통문화체험관, 극락전, 영월당 착공",
+              "2022 전통문화체험관, 극락전, 영월당 착공",
+              "전통문화체험관, 극락전, 영월당 준공"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Founded in 1931, Dalmasa is a traditional temple on Seodal Mountain with views of the Han River and Namsan.",
+        "sectionsEn": [
+          "Dalmasa's setting",
+          "Timeline: 1931–1999",
+          "Timeline: 2000–2019",
+          "Timeline: 2020–2022"
+        ],
+        "editorial": "Translate every dated timeline entry and preserve the distinction between construction, renaming, appointments, designation, and completion. Staff should resolve the duplicated 2021/2022 'construction began' wording."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231027/615247e48cd25.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/cdff32e28c1a9.jpg",
+          "alt": "1968년 신축 대웅전",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/2789781cc598b.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/f10a9676861a5.jpg",
+          "alt": "대웅전 석가모니불",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/17037920f9289.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231206/fda1d92a4a9a6.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 역사",
+          "href": "https://dalmasa.org/19"
+        },
+        {
+          "text": "달마사 비전",
+          "href": "https://dalmasa.org/20"
+        },
+        {
+          "text": "주지스님 인사말",
+          "href": "https://dalmasa.org/21"
+        },
+        {
+          "text": "전각 안내",
+          "href": "https://dalmasa.org/22"
+        },
+        {
+          "text": "오시는 길",
+          "href": "https://dalmasa.org/23"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "legacyPath": "/20",
+      "liveUrl": "https://dalmasa.org/20",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/20",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/about/vision",
+        "en": "/en/about/vision"
+      },
+      "title": {
+        "ko": "달마사 비전",
+        "en": "Vision"
+      },
+      "section": "about",
+      "template": "story",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 비전"
+        ],
+        "headings": [
+          "달마사의 비전",
+          "달마사는 남서부 지역 중심 사찰로 거듭나기 위한 100년을 준비하고 있습니다.",
+          "남서부권 전통사찰의 위상 강화",
+          "자등명自燈明 법등명法燈明 수행도량",
+          "지역 포교를 통한 공동체 형성"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사의 비전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사는 남서부 지역 중심 사찰로 거듭나기 위한 100년을 준비하고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "남서부권 전통사찰의 위상 강화",
+              "근대불교의 고승 만공스님이 이름을 지으시고 남으로는 관악의 정기를 받고, 북으로는 북악 남산의 기상을 아로새기며 유유히 흐르는 한강의 물줄기를 마주한 채 80여 년 동안 지역 유일의 전통사찰로 정법과 신행을 이어온 달마사! 이제 서울 지역 최고의 모범도량, 조계종의 중심 사찰로 거듭나기 위한 새로운 100년을 시작합니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자등명自燈明 법등명法燈明 수행도량",
+              "부처님 뜻을 잊지 않고 스스로 마음의 등불 밝히도록 교육, 신행활동, 봉사활동등을 통하여 수행 정진하는 도량으로 거듭나고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "지역 포교를 통한 공동체 형성",
+              "지난 80년 동안 흑석동의 변화를 함께 한 달마사는 주민들에게 심신의 휴식과 위안을 제공하는 안식처이자 고전의 멋과 전통의 아름다움을 계상한 현대적인 문화 공간, 그리고 수행을 통해 지역 주민과 하나가 되는 공동체의 중심이 될 것입니다."
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Dalmasa is preparing for its next century as a leading traditional temple and practice community in southwestern Seoul.",
+        "sectionsEn": [
+          "Strengthening the role of a traditional temple",
+          "Be a lamp unto yourself and the Dharma",
+          "Building community through local outreach"
+        ],
+        "editorial": "Render 자등명 법등명 as a Buddhist teaching, not a marketing slogan; retain the Korean/Chinese characters where useful."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231123/6b237157c1ce5.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231123/d5884b6b7b2b0.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231123/2247911ad2ba1.png",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 역사",
+          "href": "https://dalmasa.org/19"
+        },
+        {
+          "text": "달마사 비전",
+          "href": "https://dalmasa.org/20"
+        },
+        {
+          "text": "주지스님 인사말",
+          "href": "https://dalmasa.org/21"
+        },
+        {
+          "text": "전각 안내",
+          "href": "https://dalmasa.org/22"
+        },
+        {
+          "text": "오시는 길",
+          "href": "https://dalmasa.org/23"
+        }
+      ]
+    },
+    {
+      "id": "abbot",
+      "legacyPath": "/21",
+      "liveUrl": "https://dalmasa.org/21",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/21",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/about/abbot",
+        "en": "/en/about/abbot"
+      },
+      "title": {
+        "ko": "주지스님 인사말",
+        "en": "Greeting from the Abbot"
+      },
+      "section": "about",
+      "template": "story-portrait",
+      "sourceKorean": {
+        "activeMenu": [
+          "주지스님 인사말"
+        ],
+        "headings": [
+          "주지스님 인사말"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "주지스님 인사말"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "안녕하십니까,",
+              "달마사 주지 소임을 맡고있는 일행스님 입니다.",
+              "살다 보니 이렇게도 되는구나! 하고 가끔 감탄합니다.",
+              "낙엽이 뒹굴고, 풀들이 성글게 자라고 자연이 어우러진 달마사가 현대의 찬란한 문명 앞에 떡하니 자리 잡은 요즘, 부처님의 가르침과 예스러움을 고스란히 담았습니다. 거기다 오가는 많은 사람이 찾아주며 찬탄을 보내니 서울에 이렇게 아름다운 부처님 도량이 있습니다.",
+              "달마사에 오셔서 부처님의 가르침과 향기와 지금까지 걸어온 우리 자신의 발자취와 지금 가고 있는 현실과 앞으로 우리가 걸어갈 방향을 찾아 나서기에 아름다운 쉼터가 될 수 있겠다 싶습니다. 이 아름답고 고요한 부처님 도량에 혼자 즐겁고 행복한 시간을 갖기에는 너무 아쉬움이 남습니다.",
+              "부디 달마사를 찾는 모든 분의 삶이 안팎으로 풍요로워지기를 바랍니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "대한불교조계종 달마사",
+              "주지 일행(一行) 합장"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Venerable Ilhaeng welcomes visitors to a quiet place where Buddhist teaching, traditional character, nature, and modern Seoul meet.",
+        "sectionsEn": [
+          "Welcome",
+          "A place to pause and find direction",
+          "Closing wish",
+          "Venerable Ilhaeng, Abbot of Dalmasa"
+        ],
+        "editorial": "Use respectful but natural English. Translate 합장 as a respectful closing rather than literally as 'palms together.'"
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/cc9bd20ae0a36.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 역사",
+          "href": "https://dalmasa.org/19"
+        },
+        {
+          "text": "달마사 비전",
+          "href": "https://dalmasa.org/20"
+        },
+        {
+          "text": "주지스님 인사말",
+          "href": "https://dalmasa.org/21"
+        },
+        {
+          "text": "전각 안내",
+          "href": "https://dalmasa.org/22"
+        },
+        {
+          "text": "오시는 길",
+          "href": "https://dalmasa.org/23"
+        }
+      ]
+    },
+    {
+      "id": "halls",
+      "legacyPath": "/22",
+      "liveUrl": "https://dalmasa.org/22",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/22",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/about/halls",
+        "en": "/en/about/halls"
+      },
+      "title": {
+        "ko": "전각 안내",
+        "en": "Temple Halls"
+      },
+      "section": "about",
+      "template": "place-directory",
+      "sourceKorean": {
+        "activeMenu": [
+          "전각 안내"
+        ],
+        "headings": [
+          "전각 안내",
+          "진여문",
+          "자인당",
+          "사운당",
+          "자하루",
+          "대웅전",
+          "삼성각",
+          "소림굴(영천)",
+          "영일당·영월당",
+          "극락전",
+          "미륵부처님",
+          "석조관세음보살님",
+          "아미타부처님",
+          "거북바위",
+          "마애존불상"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "전각 안내"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "진여문",
+              "달마사에 들어서는 첫 번째 문인 일주문은 사물 그대로의 모습을 뜻하는 진여(眞如)라 이름 붙여 진여문이라 합니다. 별도의 사천왕문 없이 위쪽에 누각이 위치한 형태를 하고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자인당",
+              "‘자인당’은 회주스님의 법호를 딴 당호로 스님과 사찰종무원의 거주공간으로 사용되고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "사운당",
+              "사방에서 인연들이 모여든다는 의미의 ‘사운당’은 스님 전용 거주공간인 요사채입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자하루",
+              "전각에서 바라보는 저녁노을이 너무 아름다워 마치 부처님의 후광을 보는 듯한 느낌을 받는 곳으로 이에 부처님 몸의 빛(광명)을 상징하는 자하紫蝦를 붙여 자하루라 하였습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "대웅전",
+              "새벽예불, 사시불공, 그리고 저녁예불이 매일 이루어지는 대웅전은 중창불사를 통하여 2016년 완공된 달마사의 중심 기도공간입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "삼성각",
+              "1966년 신축하여 재물, 수명, 복을 관장한다고 알려진 삼성(산신, 칠성, 독성)을 모시고 있는 삼성각은 치성광여래를 주불로 모시고, 산신과 독성을 좌우에 모시고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "소림굴(영천)",
+              "자연이 만들어 놓은 마르지 않은 샘, 영천이 흐르는 곳입니다. 번뇌의 고통 속에서 부처님의 가르침을 갈망하는 자에게 감로수와 같은 수행기도처로 용왕님이 살고 있다고 전해지며 우리 민족과 함께한 민속신앙이 깃든 곳입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "영일당·영월당",
+              "첨단 봉안시스템을 구비한 전통사찰 양식의 달마사 내 봉안시설입니다. 국립현충원과 맞닿은 자리에 위치한 달마사 추모관은 조상의 음덕을 기리고 자손의 효를 부처님과 함께하는 봉안시설(동작구 설치신고 2호)이자 추모전각입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "극락전",
+              "영가의 극락왕생을 발원하는 재를 봉행하는 전각입니다. 1968년부터 대웅전으로 사용되어오던 전각을 2016년 대웅전 중창불사 후 극락전으로 개칭, 전환하여 사용하였으며 2021년 개축불사를 시작하여 2022년 새로이 준공하였습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "미륵부처님",
+              "진여문에 들어서면 마주보이는 미륵부처님은 2013년 8월에 조성되었습니다. 미륵불의 출현은 국토의 풍요로움과 안락함으로 중생의 죄악과 업장과 번뇌의 장애를 끊고 자비심을 닦아서 미륵불의 국토에 나도록 하자는 데 그 깊은 진의가 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "석조관세음보살님",
+              "삼성각 뒤쪽에 위치한 석조관세음보살님은 1971년 9월에 조성하였습니다. 지혜와 자비가 한량없으신 관세음보살님 옆에는 인등이 위치해있어 많은 이들이 간절한 발원을 이루는 곳입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "아미타부처님",
+              "달마사 뒷산 언덕 위에 있는 거북바위에 위치한 아미타부처님은 미륵부처님과 함께 2013년 8월에 조성되었습니다. 극락세계를 주재하는 부처님으로 열반에 들지 않고 영원토록 중생을 교화하는 분입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "거북바위",
+              "서달산 정산에 위치한 거북모양의 천연암석 거북바위는 수천년을 우리 삶과 함께한 거북 신앙이 깃든 숨겨진 기도처입니다. 한강을 굽어 바라보는 거북바위는 일년에 두 번씩 한강에 나아가 목욕을 한다는 설화와 함께 서민들의 서원성취기도가 끊이지 않는 곳이기도 합니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "마애존불상",
+              "정확한 발생년도를 알 수 없는 마에존불상은 정돈되지 않은 자연 그대로의 미소를 지니고있는 것이 특징입니다."
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A guide to Dalmasa's gates, halls, shrines, memorial buildings, sacred spring, statues, and outdoor prayer places.",
+        "sectionsEn": [
+          "Jinyeomun Gate",
+          "Jaindang",
+          "Saundang",
+          "Jaharu",
+          "Daeungjeon (Main Buddha Hall)",
+          "Samseonggak Shrine",
+          "Sorimgul sacred spring",
+          "Yeongildang and Yeongwoldang",
+          "Geungnakjeon",
+          "Maitreya Buddha",
+          "Stone Avalokitesvara",
+          "Amitabha Buddha",
+          "Turtle Rock",
+          "Rock-carved Buddha"
+        ],
+        "editorial": "Keep Korean hall names in romanization followed by a short functional translation. Add meaningful alt text to all 15 source images."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231227/af49a9049fade.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/095a30bf2899b.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/458b7e2b6596b.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/6fbf52b4f981a.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/015196eb194ef.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/5b431d32a7f70.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231122/27ecb954bd7ba.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/5cf6c26888bf5.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231213/ec4f3531bc2ff.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231122/2268b89f9bee2.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/b56e2ef5b0786.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/c9e9bf1f13a26.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/4c9bca3561f40.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/195fa6020820d.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/81a6763abae61.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 역사",
+          "href": "https://dalmasa.org/19"
+        },
+        {
+          "text": "달마사 비전",
+          "href": "https://dalmasa.org/20"
+        },
+        {
+          "text": "주지스님 인사말",
+          "href": "https://dalmasa.org/21"
+        },
+        {
+          "text": "전각 안내",
+          "href": "https://dalmasa.org/22"
+        },
+        {
+          "text": "오시는 길",
+          "href": "https://dalmasa.org/23"
+        }
+      ]
+    },
+    {
+      "id": "directions",
+      "legacyPath": "/23",
+      "liveUrl": "https://dalmasa.org/23",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/23",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/about/directions",
+        "en": "/en/about/directions"
+      },
+      "title": {
+        "ko": "오시는 길",
+        "en": "Directions"
+      },
+      "section": "about",
+      "template": "directions",
+      "sourceKorean": {
+        "activeMenu": [
+          "오시는 길"
+        ],
+        "headings": [
+          "오시는 길",
+          "달마사",
+          "지하철",
+          "버스"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "오시는 길"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사",
+              "서울특별시 동작구 서달로 50-26(흑석동)"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "지하철",
+              "| 9호선 흑석역 3,4번 출구 → 중앙대 병원 이동 → 동작 01번, 동작 21번 → 달마사 입구 하차",
+              "| 9호선 노량진역 3번 출구 → 동작 01번 → 달마사 입구 하차(도보 5분)",
+              "| 7호선 상도역 5번 출구 → 동작 01번, 동작 21번 → 달마사 입구 하차"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "버스",
+              "흑석역 (또는 중대병원) 하차 → 동작 01번, 동작 21번 → 달마사 입구 하차",
+              "| 흑석역 하차 : 151(우이동-흑석역) 5511(서울대-흑석역), 5517(서울대-흑석역), 5524(신림8동-흑석역)",
+              "| 중대병원 하차 : 452(복정역환승센터-중대병원)"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Dalmasa is at 50-26 Seodal-ro, Dongjak-gu, Seoul, reachable from Heukseok, Noryangjin, and Sangdo stations by local bus.",
+        "sectionsEn": [
+          "Address",
+          "Map links",
+          "By subway",
+          "By bus",
+          "Final approach",
+          "Parking and accessibility"
+        ],
+        "editorial": "Preserve the published transit steps but verify route numbers before launch. Add Naver, Kakao, and Google map links; parking, slope, stairs, and wheelchair facts are not published and must be staff-verified."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/upload/S2023102625a1d83971c64/8ea4058d350fb.png",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/upload/S2023102625a1d83971c64/342f1a1d4f4e8.png",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 역사",
+          "href": "https://dalmasa.org/19"
+        },
+        {
+          "text": "달마사 비전",
+          "href": "https://dalmasa.org/20"
+        },
+        {
+          "text": "주지스님 인사말",
+          "href": "https://dalmasa.org/21"
+        },
+        {
+          "text": "전각 안내",
+          "href": "https://dalmasa.org/22"
+        },
+        {
+          "text": "오시는 길",
+          "href": "https://dalmasa.org/23"
+        }
+      ]
+    },
+    {
+      "id": "prayer",
+      "legacyPath": "/24",
+      "liveUrl": "https://dalmasa.org/24",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/25",
+      "sourceExperienceDuplicateOf": "/25",
+      "canonicalPaths": {
+        "ko": "/ko/prayer",
+        "en": "/en/prayer"
+      },
+      "title": {
+        "ko": "기도·불공",
+        "en": "Prayer & Offerings"
+      },
+      "section": "prayer",
+      "template": "section-landing",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마행자"
+        ],
+        "headings": [
+          "달마행자"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마행자"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 달마행자란",
+              "부처님의 가르침(法, Dharma, 달마)을 몸과 입 그리고 생각으로 실천하고 수행과 기도를 스님과 함께하는 불자를 뜻합니다.",
+              "달마행자 수행기도란,",
+              "현대를 살아가는 바쁜 일정 속에서도 신행과 불공, 기도에 동참하실 수 있도록",
+              "매월 정기적으로 봉행되는 가족 기도와 선망영가를 위한 기도를고정으로 올려드리는 정기기도 회원입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "일상을 수행으로 채워 복과 지혜 가득한 주인이 되고자하는 달마행자 수행기도에 동참하시면...",
+              "1. 모든 정기기도에 함께합니다.",
+              "- 천일기도(매일) 가족축원",
+              "- 신중3일기도(매월 음력 1일 ~ 3일) 가족축원",
+              "- 인등기도(매월 음력 15일) 인등올린 가족 축원",
+              "- 지장재일기도 (매월 음력 18일) 선망 영가를 위한 축원",
+              "- 관음재일기도 (매월 음력 24일) 가족 지정 1인 축원",
+              "- 산신기도 (매월 넷째 토요일) 가족 지정 1인 축원",
+              "2. 대웅전 인등을 직계가족 (최대 4인) 1인 1등으로 켜서 올리고 축원합니다.",
+              "3. 직계가족 경조사에 축하화환 또는 근조화한을 보내드립니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "생활이 수행과 기도가 되는",
+              "달마행자 수행기도"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "생활이 수행과 기도가 되는",
+              "달마행자 수행기도"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Explore daily and monthly prayer, special observances, memorial rites, offerings, and longer practice programs at Dalmasa.",
+        "sectionsEn": [
+          "Daily prayer",
+          "Monthly prayer",
+          "Special prayer",
+          "Memorial rites",
+          "Gongyang offerings",
+          "Dalmasa Practitioner Program",
+          "1,000-Day Great Dharani Practice"
+        ],
+        "editorial": "This is a new section landing derived from a live duplicate of /25. Each child card needs schedule, audience, fee/donation state, venue, and a real contact action."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231204/b769affba7744.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "dalmasa-practitioner",
+      "legacyPath": "/25",
+      "liveUrl": "https://dalmasa.org/25",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/25",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/dalmasa-practitioner",
+        "en": "/en/prayer/dalmasa-practitioner"
+      },
+      "title": {
+        "ko": "달마행자",
+        "en": "Dalmasa Practitioner Program"
+      },
+      "section": "prayer",
+      "template": "program",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마행자"
+        ],
+        "headings": [
+          "달마행자"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마행자"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 달마행자란",
+              "부처님의 가르침(法, Dharma, 달마)을 몸과 입 그리고 생각으로 실천하고 수행과 기도를 스님과 함께하는 불자를 뜻합니다.",
+              "달마행자 수행기도란,",
+              "현대를 살아가는 바쁜 일정 속에서도 신행과 불공, 기도에 동참하실 수 있도록",
+              "매월 정기적으로 봉행되는 가족 기도와 선망영가를 위한 기도를고정으로 올려드리는 정기기도 회원입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "일상을 수행으로 채워 복과 지혜 가득한 주인이 되고자하는 달마행자 수행기도에 동참하시면...",
+              "1. 모든 정기기도에 함께합니다.",
+              "- 천일기도(매일) 가족축원",
+              "- 신중3일기도(매월 음력 1일 ~ 3일) 가족축원",
+              "- 인등기도(매월 음력 15일) 인등올린 가족 축원",
+              "- 지장재일기도 (매월 음력 18일) 선망 영가를 위한 축원",
+              "- 관음재일기도 (매월 음력 24일) 가족 지정 1인 축원",
+              "- 산신기도 (매월 넷째 토요일) 가족 지정 1인 축원",
+              "2. 대웅전 인등을 직계가족 (최대 4인) 1인 1등으로 켜서 올리고 축원합니다.",
+              "3. 직계가족 경조사에 축하화환 또는 근조화한을 보내드립니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "생활이 수행과 기도가 되는",
+              "달마행자 수행기도"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "생활이 수행과 기도가 되는",
+              "달마행자 수행기도"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A recurring practice membership that includes family dedication prayers, ancestor prayers, individual lanterns, and support for family occasions.",
+        "sectionsEn": [
+          "What is a Dalmasa practitioner?",
+          "Included regular prayers",
+          "Individual lanterns for up to four immediate family members",
+          "Family milestone support",
+          "How to join"
+        ],
+        "editorial": "The live page omits fee, application steps, term, and cancellation details. Keep those fields as 'Contact the general office' until verified."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231204/b769affba7744.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "daily-prayer",
+      "legacyPath": "/26",
+      "liveUrl": "https://dalmasa.org/26",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/26",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/daily",
+        "en": "/en/prayer/daily"
+      },
+      "title": {
+        "ko": "상시기도",
+        "en": "Daily Prayer"
+      },
+      "section": "prayer",
+      "template": "schedule-collection",
+      "sourceKorean": {
+        "activeMenu": [
+          "상시기도"
+        ],
+        "headings": [
+          "상시기도",
+          "새벽예불",
+          "사시(巳時)불공",
+          "저녁예불",
+          "생일기도",
+          "당일기도·한달기도",
+          "독불공"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "상시기도"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "새벽예불",
+              "만물이 잠든 고요한 새벽에 일어나 몸과 마음을 바르게 가다듬고 하루를 맞이하는 시간입니다.",
+              "시간 매일 새벽 4시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "사시(巳時)불공",
+              "사시는 오전 9시 ~ 11시까지를 의미합니다. 부처님께서 계시던 당시 수행자들은 하루 한 끼 이 시간에만 공양하였습니다. 이러한 전통이 기반이 되어 매일 사시가 되면 부처님과 스님들께 공양과 불공을 올립니다.",
+              "시간 매일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "저녁예불",
+              "하루를 마무리하고 내일을 새롭게 맞이하기 위해 마음을 내려놓는 시간입니다.",
+              "시간 매일 오후 6시 (11월~3월), 오후 6시 30분 (4월~10월)",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "생일기도",
+              "불교에서는 부처님 법을 만나 인간으로 태어나기는 어렵다고 합니다. 현생에 인간으로 태어남을 감사히 여겨 부처님께 공양을 올리는 날입니다.",
+              "시간 매일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "당일기도·한달기도",
+              "특별한 목적이나 서원을 세우고 이를 발원하는 기도입니다.",
+              "시간 매일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "독불공",
+              "독불공은 집안의 행사와 생일을 앞두고 부처님께 공양을 올려 가족의 안정과 자신의 소원을 기원하는 의식을 말합니다.",
+              "* 시간 : 상담 후 결정",
+              "* 장소 : 대웅전, 삼성각"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Daily worship and request-based prayers in Dalmasa's Main Buddha Hall and Samseonggak Shrine.",
+        "sectionsEn": [
+          "Dawn service — daily 4:00 AM",
+          "Sasi offering — daily 10:00 AM",
+          "Evening service — 6:00 PM Nov–Mar; 6:30 PM Apr–Oct",
+          "Birthday prayer — daily 10:00 AM",
+          "One-day or one-month prayer — daily 10:00 AM",
+          "Private offering — time arranged after consultation"
+        ],
+        "editorial": "Explain that requested prayers require consultation and are not automatically bookable. Venue is Daeungjeon except private offerings may also use Samseonggak."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/493204f708808.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/b6fd37a59ccd6.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/423c07ab2282e.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/5cedc904ac648.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/de796d6c5bcaf.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/1953b7fbf0ae6.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "special-prayer",
+      "legacyPath": "/27",
+      "liveUrl": "https://dalmasa.org/27",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/27",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/special",
+        "en": "/en/prayer/special"
+      },
+      "title": {
+        "ko": "특별기도",
+        "en": "Special Prayer"
+      },
+      "section": "prayer",
+      "template": "program-collection",
+      "sourceKorean": {
+        "activeMenu": [
+          "특별기도"
+        ],
+        "headings": [
+          "특별기도",
+          "성도재일",
+          "정초산림 7일기도",
+          "입춘 3일 및 삼재풀이기도",
+          "출가열반재일",
+          "자비도량참법기도",
+          "하안거(동안거) 기도",
+          "수능·학업성취백일기도",
+          "칠석 3일기도",
+          "동지 3일기도"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "특별기도"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "성도재일",
+              "석가모니 부처님께서 깨달으신 날로 자신의 신행(信行)생활을 돌아보고 새로운 다짐을 하는 수행기간입니다.",
+              "일시 음력 12월 8일"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "정초산림 7일기도",
+              "정초는 정월의 초승이며, 산림이라는 말은 ‘일정한 날을 정해 놓고 정업(淨業)을 닦아서 불법을 깊이 깨닫고 공덕을 쌓는 자리’라는 말입니다. 일년내내 무장무애하여 평안하고 모든 죄를 소멸하여 청정함을 회복하는 기도가 봉행됩니다.",
+              "일시 음력 1월 3일 ~ 9일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "입춘 3일 및 삼재풀이기도",
+              "입춘은 24절기 중 처음 시작되는 절기이며, 새해를 상징합니다. 한해의 희망을 담은 입춘문을 붙이고, 일년의 무사무탈을 기원하며, 원화소복(遠禍召福)의 삼재소멸기도를 봉행합니다.",
+              "일시 양력 2월 2일 ~ 4일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "출가열반재일",
+              "석가모니 부처님께서 참된 삶의 가치를 깨닫기 위해 출가하셔 열반에 이르기까지를 출가열반재일이라고 합니다. 이 기간에는 출가와 열반의 의미를 되새기고자 용맹정진 수행기간을 갖습니다.",
+              "일시 음력 2월 8일 ~ 15일",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자비도량참법기도",
+              "자신을 되돌아보는 뜻깊은 기도로 자신의 허물을 드러내고 다시는 범하지 않으며 새로이 태어나겠다는 약속의 기도입니다.",
+              "일시 음력 2월 8일 ~ 17일"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "하안거(동안거) 기도",
+              "안거는 출가한 스님들이 한곳에 모여 외출을 금하고 수행하는 제도를 말합니다. 원래 인도에서는 우중에 수행자들이 돌아다니며 수행을 하다 폭우를 만나 피해를 입거나 초목과 벌레들을 살상하는 사태가 많았으므로, 이 시기에는 아예 외출을 금하고 수행에만 몰두하던 데서 유래되었습니다. 그러던 것이 추운 북쪽으로 불교가 전래되면서 겨울에 수행하던 스님들이 추위로 목숨을 잃는 일이 일어나게 되어 중국, 우리나라 등의 북쪽에서는 여름철 외에 겨울철에도 안거기도를 하게 되었습니다. 출가수행자 뿐만 아니라 재가불자들도 생활 속에서 수행하는 자세를 갖추고 자리이타(自利利他)의 정신을 실천한다는 의미에서 하안거와 동안거 90기도를 봉행합니다.",
+              "하안거 일시 음력 10월 16일 ~ 다음해 1월 15일",
+              "동안거 일시 음력 4월 16일 ~ 7월 15일",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "수능·학업성취백일기도",
+              "매년 11월에 대학수학능력시험과 그 외 모든 학업성취를 위해 100일간 기도를 봉행합니다. 불보살님의 가피로 자녀들의 지혜가 더욱 깊어지고 관세음보살님의 원력으로 대학입시원만 합격 발원을 성취하시기 바랍니다.",
+              "일시 양력 8월 ~ 11월 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "칠석 3일기도",
+              "칠석은 견우(牽牛)와 직녀(織女)가 만나 사랑을 나눈다는 우리 민족의 명절입니다. 또한 불교에서는 북두칠성모시는 것이라 하여 칠석기도라고도 합니다. 수명을 관장하는 치성광여래불과 일광월광보살님께 자손창성, 무병장수, 길상인연, 불공을 올려 소원성취하시기 바랍니다.",
+              "일시 음력 7월 5일 ~ 7일 오전 10시",
+              "장소 삼성각"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "동지 3일기도",
+              "12월 22일은 절기로 동지입니다. 동지는 해가 가장 짧은 날을 말하는데 이는 동시에 해가 점점 길어짐을 의미하기도 합니다. 어둠의 끝에서 밝음으로 시작하는 날을 의미한다고 볼 수 있습니다. 동지는 전 날 죽었던 태양의 기운이 다시 살아나는 첫날로 하심, 평등, 화합의 의미를 갖는 날입니다. 그런 뜻에서 귀신을 쫒는다는 붉음의 상징인 팥으로 죽을 쑤어서 먹는 것입니다. 또한 우리 고조선 때의 홍범구주(洪範九疇)를 바탕으로 송나라 주희(朱熹)는 1년 365일의 흐름을 계산한 99원수도(九九圓數圖)라는 척력을 만들었는데, 여기에서도 동지는 마침과 동시에 시작을 뜻하고 있음을 알 수 있습니다.",
+              "그래서 동지에는 달력을 만들어 나누어주는 것입니다.",
+              "새로운 시작을 위하여 모든 액난을 물리칠 수 있도록 기도성취 하시길 바랍니다.",
+              "일시 양력 12월 20일 ~ 22일 오전 10시",
+              "장소 대웅전"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Annual and seasonal Buddhist observances, retreats, examination prayers, and traditional prayer periods.",
+        "sectionsEn": [
+          "Bodhi Day",
+          "Seven-day New Year prayer",
+          "Ipchun and Samjae prayer",
+          "Renunciation and Parinirvana observance",
+          "Jabi Doryang Chambeop repentance prayer",
+          "Summer and winter retreats",
+          "100-day academic-achievement prayer",
+          "Chilseok prayer",
+          "Winter-solstice prayer"
+        ],
+        "editorial": "The live page appears to reverse the summer-retreat and winter-retreat date labels: it gives lunar 10/16–1/15 for 하안거 and 4/16–7/15 for 동안거. Do not silently publish either pairing; temple staff must confirm the labels and dates."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/7a424b2a88678.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/1d8d740da0695.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231202/14379c6666602.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231202/83202cd3aaa15.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/19cdf6c3bfeec.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/2c4eeb183163b.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/3248ebe273351.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/1fd2f7d1f1578.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/d134b69c74395.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "memorial-rites",
+      "legacyPath": "/28",
+      "liveUrl": "https://dalmasa.org/28",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/28",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/memorial-rites",
+        "en": "/en/prayer/memorial-rites"
+      },
+      "title": {
+        "ko": "재(齋) 및 제사(祭祀)",
+        "en": "Memorial Rites & Ancestral Services"
+      },
+      "section": "prayer",
+      "template": "program-collection",
+      "sourceKorean": {
+        "activeMenu": [
+          "재(齋) 및 제사(祭祀)"
+        ],
+        "headings": [
+          "재(齋) 및 제사(祭祀)",
+          "49재",
+          "천도재",
+          "기제",
+          "생신제 및 사갑제",
+          "설차례 및 추석차례",
+          "정초합동천도재",
+          "중양절합동천도재",
+          "만년위패"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "재(齋) 및 제사(祭祀)"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "49재",
+              "49재는 돌아가신 영가에게 덕높은 스님을 모시고 여러 가지 공양을 베풀고 법을 설하여 영가가 깨침을 얻고 극락왕생토록 하는 불교의식입니다. 영가가 돌아가신 날로 부터 칠일 째 되는 날에 초재를 올리게 되는데 그것을 7일마다 일곱 번 올린다 하여 사십구재라고 합니다. 사람이 죽으면 7일마다 일곱 번에 걸쳐 명부시왕들의 심판을 받는데 마지막 49일째에 염라대왕에게 최종심판을 받아야 지옥에 갈지 극락에 갈지 결정된다합니다. 그래서 7일마다 한 번씩 일곱 번의 재를 올립니다.",
+              "달마사에서는 상주의 요청에 따라 임종 후 발인까지 영가를 위한 의식, 장례식 후 사찰에서 영가의 영정과 위패를 모시고 반혼재(返魂齋)를 모십니다. 또한 달마사 납골당인 봉안당에 안치하여 부처님 곁에서 편안한 사후를 보낼 수 있습니다.",
+              "사후세계의 심판관인 10명의 시왕에게 망자의 죄업을 사하기 위해 돌아가신 지 100일 되는 날 재를 올리며, 이를 백재(百齋)라고 합니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "천도재",
+              "천도재는 조상님들 또는 인연 있는 영가를 천도하여 극락왕생토록 하기 위해 드리는 불교의식입니다. 사십구재를 올려주지 못한 영가, 갑자기 사고를 당한 영가, 조상님들의 극락왕생, 집안의 액난이 있을 경우, 혹은 큰 일을 앞두고 무사무탈을 기원하기 위해 천도재를 올립니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "기제",
+              "선망조상이나 먼저 가신 가족 친지를 위하여 영가의 제사일에 재공양을 올리는 의식을 말합니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "생신제 및 사갑제",
+              "영가가 돌아가신 후 생일을 맞거나 회갑 또는 칠순, 팔순을 맞았을 때 올리는 재를 말합니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "설차례 및 추석차례",
+              "민족의 명절인 설 및 추석을 맞아 부처님께 공양을 올리고, 유주무주 선망부모 조상님께 지극한 마음으로 상을 차려 합동차례 또는 단독차례로 정성껏 모셔 조상님들의 음덕을 기리고 극락왕생을 발원드립니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "정초합동천도재",
+              "정월대보름에 봉행되는 합동천도재입니다.",
+              "일시 음력 1월 15일 오전 9시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "중양절합동천도재",
+              "음력 9월 9일에 봉행되는 합동천도재입니다.",
+              "일시 음력 9월 9일 오전 9시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "만년위패",
+              "영가의 두터운 업장을 소멸하고, 부처님 곁에서 극락왕생할 수 있도록 위패를 봉안하는 것을 말합니다."
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Buddhist memorial rites for the deceased and ancestors, including 49-day rites, Cheondojae, anniversaries, holiday rites, and memorial tablets.",
+        "sectionsEn": [
+          "49-day rite",
+          "Cheondojae guiding rite",
+          "Death-anniversary rite",
+          "Birthday and milestone rites",
+          "Lunar New Year and Chuseok rites",
+          "New Year joint Cheondojae — lunar 1/15, 9:00 AM",
+          "Double Ninth joint Cheondojae — lunar 9/9, 9:00 AM",
+          "Permanent memorial tablets"
+        ],
+        "editorial": "Use compassionate, non-transactional English. Keep ritual names in romanization with a plain-language explanation; add consultation, documents, donation guidance, and venue only after verification."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/e5b2a1decb123.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/df7c13856cdbf.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/517a9fcdbfb95.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/cd19df7da8225.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231106/42bc00f130f34.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231202/33ddd01f9dfd0.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231202/0771acc4435f4.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/448147f914ed5.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "gongyang",
+      "legacyPath": "/29",
+      "liveUrl": "https://dalmasa.org/29",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/29",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/gongyang",
+        "en": "/en/prayer/gongyang"
+      },
+      "title": {
+        "ko": "공양",
+        "en": "Gongyang (Offerings)"
+      },
+      "section": "prayer",
+      "template": "program",
+      "sourceKorean": {
+        "activeMenu": [
+          "공양"
+        ],
+        "headings": [
+          "공양",
+          "등공양"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "공양"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "등공양",
+              "부처님 오신 날을 맞이하여 부처님께서 이 세상에 오신 참뜻을 새기며 사랑하는 내 가족을 위해, 맑고 향기로운 세상을 위해, 함께하는 이웃들과 뭇 생명들의 평화를 위해 법당의 불을 밝히는 공양입니다.",
+              "떡, 과일 공양",
+              "생일, 시험, 기일 등 기념일 및 집안 경조사 등에 부처님께 떡 또는 과일을 올려 특별함을 기리고 소원 성취를 발원하는 공양입니다.",
+              "설판",
+              "주요 기도, 법회, 행사 당일 부처님 전에 올리는 상단 공양물을 십시일반 함께 모아 올리는 공양입니다."
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Ways to make a Buddhist offering: lanterns for Buddha's Birthday, rice cake or fruit for family occasions, and shared ceremonial offerings.",
+        "sectionsEn": [
+          "Lantern offering",
+          "Rice cake and fruit offering",
+          "Seolpan shared ceremonial offering",
+          "Ask the temple"
+        ],
+        "editorial": "Explain gongyang as an offering, not a purchase. The live page has no donation amounts, lead time, or request process."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231228/bfdfce48bd9d8.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "legacyPath": "/31",
+      "liveUrl": "https://dalmasa.org/31",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/33",
+      "sourceExperienceDuplicateOf": "/33",
+      "canonicalPaths": {
+        "ko": "/ko/events",
+        "en": "/en/events"
+      },
+      "title": {
+        "ko": "법회·행사",
+        "en": "Dharma Services & Events"
+      },
+      "section": "events",
+      "template": "section-landing",
+      "sourceKorean": {
+        "activeMenu": [
+          "정기법회"
+        ],
+        "headings": [
+          "정기법회",
+          "초하루법회",
+          "일요법회",
+          "청년법회"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "정기법회"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "초하루법회",
+              "매월 음력 첫째 날 신중기도와 함께 부처님의 가르침을 배우는 자리입니다.",
+              "일시 매월 음력 1일 신중기도 후",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "일요법회",
+              "바쁜 직장인들도 동참하여 부처님 법을 통해 심신의 휴식과 위안을 찾을 수 있도록 매주 일요일에 봉행 됩니다.",
+              "일시 매주 일요일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "청년법회",
+              "불교에 관심있는 20~30대 청년이라면 누구나 동참 가능합니다. 정기법회와 차담, 봉사 및 다양한 문화활동 함께합니다.",
+              "일시 격주 토요일 오후 2시",
+              "장소 교육관",
+              "달마사 청년회 인스타그램 바로가기"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Find Dalmasa's recurring Dharma services and major annual Buddhist events.",
+        "sectionsEn": [
+          "Regular services",
+          "Major events",
+          "Current calendar",
+          "First-time attendance"
+        ],
+        "editorial": "This is a new section landing derived from a live duplicate of /33. Separate recurring schedules from dated event announcements."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231202/c06070871fe39.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231227/200f4767390f6.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231227/94a486dc6c686.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "정기법회",
+          "href": "https://dalmasa.org/33"
+        },
+        {
+          "text": "주요행사",
+          "href": "https://dalmasa.org/32"
+        },
+        {
+          "text": "달마사 청년회 인스타그램 바로가기",
+          "href": "https://www.instagram.com/dalmajigi"
+        }
+      ]
+    },
+    {
+      "id": "major-events",
+      "legacyPath": "/32",
+      "liveUrl": "https://dalmasa.org/32",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/32",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/events/major",
+        "en": "/en/events/major"
+      },
+      "title": {
+        "ko": "주요행사",
+        "en": "Major Events"
+      },
+      "section": "events",
+      "template": "event-collection",
+      "sourceKorean": {
+        "activeMenu": [
+          "주요행사"
+        ],
+        "headings": [
+          "주요행사",
+          "부처님오신날",
+          "백중 49일 지장기도 (우란분절)",
+          "소림굴(영천) 용왕재"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "주요행사"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "부처님오신날",
+              "음력 4월 8일은 부처님께서 탄생하신 날입니다. 부처님께서는 지혜로 온 세상을 밝게 비추고, 불자들은 이 시대 중생들의 고통을 해결하는 지혜의 등불을 밝힙니다.",
+              "석가모니의 탄생을 기념하기 위해 음력 1일~8일까지 봉축8일기도를 봉행하며, 부처님오신날 당일에는 봉축법요식 등 다양한 행사를 진행합니다.",
+              "일시 음력 4월 1일 ~8일",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "백중 49일 지장기도 (우란분절)",
+              "음력 7월 15일을 부모님과 조상에게 효를 실천하는 날입니다. 이 날은 목련존자가 지옥에 빠져 고통받는 어머니를 구하기 위해 부처님의 가르침을 받아 하안거가 끝나는 날 여러 스님들께 공양을 올린 날입니다. 부처님께서는 “이와 같이 선망조상과 부모님, 친족, 인연 영가들에게 부처님 말씀과 공양을 베풀어줌으로서 고통속에 헤매이는 이를 극락왕생하게 할 것이고, 재가불자에게는 무량한 복덕을 받게 될 것이다.” 라고 말씀하셨습니다. 음력 7월 15일에 ‘백가지 종류의 음식’을 준비해 영가를 극락왕생하도록 하여 백중(百衆), 백종(白終)이라하였고, 이날 영가들을 고통해서 구해주어 우란분절(盂蘭盆節)이라고도 합니다.",
+              "일시 음력 5월 26일 ~ 7월 15일",
+              "(일주일에 한 번씩 천도재 봉행)",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "소림굴(영천) 용왕재",
+              "달마사의 영천은 자연적으로 만들어져 현재까지 마르지 않는 샘입니다.",
+              "물을 관장하는 용왕신에게 자연의 재난을 예방하고 풍요롭게하여 우리의 삶을 이롭게 하기 위한 용왕재를 올립니다."
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Dalmasa's major observances include Buddha's Birthday, the 49-day Baekjung Ksitigarbha prayer, and the Dragon King rite at the sacred spring.",
+        "sectionsEn": [
+          "Buddha's Birthday — lunar 4/1–4/8, Daeungjeon",
+          "Baekjung 49-day Ksitigarbha prayer — lunar 5/26–7/15, Daeungjeon",
+          "Dragon King rite at Sorimgul sacred spring"
+        ],
+        "editorial": "Dates are lunar unless explicitly stated. Each year's Gregorian dates and participation status must come from a dated notice, not static conversion in page copy."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231214/65ba762363779.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231214/f6666954c6408.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231214/0624b092bb563.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "정기법회",
+          "href": "https://dalmasa.org/33"
+        },
+        {
+          "text": "주요행사",
+          "href": "https://dalmasa.org/32"
+        }
+      ]
+    },
+    {
+      "id": "regular-services",
+      "legacyPath": "/33",
+      "liveUrl": "https://dalmasa.org/33",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/33",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/events/regular-services",
+        "en": "/en/events/regular-services"
+      },
+      "title": {
+        "ko": "정기법회",
+        "en": "Regular Dharma Services"
+      },
+      "section": "events",
+      "template": "schedule-collection",
+      "sourceKorean": {
+        "activeMenu": [
+          "정기법회"
+        ],
+        "headings": [
+          "정기법회",
+          "초하루법회",
+          "일요법회",
+          "청년법회"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "정기법회"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "초하루법회",
+              "매월 음력 첫째 날 신중기도와 함께 부처님의 가르침을 배우는 자리입니다.",
+              "일시 매월 음력 1일 신중기도 후",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "일요법회",
+              "바쁜 직장인들도 동참하여 부처님 법을 통해 심신의 휴식과 위안을 찾을 수 있도록 매주 일요일에 봉행 됩니다.",
+              "일시 매주 일요일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "청년법회",
+              "불교에 관심있는 20~30대 청년이라면 누구나 동참 가능합니다. 정기법회와 차담, 봉사 및 다양한 문화활동 함께합니다.",
+              "일시 격주 토요일 오후 2시",
+              "장소 교육관",
+              "달마사 청년회 인스타그램 바로가기"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Recurring Dharma gatherings for lunar-month observance, Sunday worship, and young adults.",
+        "sectionsEn": [
+          "First-day-of-the-lunar-month service — after the Sinjung prayer",
+          "Sunday Dharma service — every Sunday 10:00 AM, Daeungjeon",
+          "Young adult service — every other Saturday 2:00 PM, Education Hall"
+        ],
+        "editorial": "The youth service is open to people in their 20s and 30s interested in Buddhism. Preserve the Instagram link but make the temple page the authoritative schedule."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231202/c06070871fe39.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231227/200f4767390f6.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231227/94a486dc6c686.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "정기법회",
+          "href": "https://dalmasa.org/33"
+        },
+        {
+          "text": "주요행사",
+          "href": "https://dalmasa.org/32"
+        },
+        {
+          "text": "달마사 청년회 인스타그램 바로가기",
+          "href": "https://www.instagram.com/dalmajigi"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "legacyPath": "/34",
+      "liveUrl": "https://dalmasa.org/34",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/48",
+      "sourceExperienceDuplicateOf": "/48",
+      "canonicalPaths": {
+        "ko": "/ko/education",
+        "en": "/en/education"
+      },
+      "title": {
+        "ko": "교육",
+        "en": "Buddhist Education"
+      },
+      "section": "education",
+      "template": "section-landing",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 불학원"
+        ],
+        "headings": [
+          "달마사 불학원"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 불학원"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "button",
+            "blocks": [
+              "불학원FACEBOOK불학원INSTAGRAM네이버블로그 바로가기"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사에서는 불교를 알기쉽게 배워보는 기본교육을 비롯하여",
+              "전문교육과정인 불교대학, 경전반을 운영하고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "불학원 FACEBOOK 바로가기불학원 INSTAGRAM 바로가기네이버 블로그 바로가기"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Choose a learning path from introductory Buddhist foundations through Buddhist College and sutra study.",
+        "sectionsEn": [
+          "Dalmasa Buddhist Academy",
+          "Buddhist Foundations",
+          "Buddhist College",
+          "Sutra Study",
+          "Current enrollment"
+        ],
+        "editorial": "This is a new section landing derived from a live duplicate of /48. Course status, language, tuition/donation, and application must be explicit."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231110/a31b1492782ba.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 불학원",
+          "href": "https://dalmasa.org/48"
+        },
+        {
+          "text": "기본교육",
+          "href": "https://dalmasa.org/35"
+        },
+        {
+          "text": "불교대학",
+          "href": "https://dalmasa.org/45"
+        },
+        {
+          "text": "경전반",
+          "href": "https://dalmasa.org/46"
+        },
+        {
+          "text": "불학원FACEBOOK",
+          "href": "https://www.facebook.com/people/%EB%8B%AC%EB%A7%88%EC%82%AC/pfbid02icnRVBpS4zrU6Js7T9ExF8oXwV9V1oAw1yBQCi4pLNfUku88QG6rYzmURE3svh6pl/"
+        },
+        {
+          "text": "불학원INSTAGRAM",
+          "href": "https://www.instagram.com/dalmasa01/#"
+        },
+        {
+          "text": "네이버블로그 바로가기",
+          "href": "https://blog.naver.com/dalmasa1931"
+        },
+        {
+          "text": "불학원 FACEBOOK 바로가기",
+          "href": "https://www.facebook.com/people/%EB%8B%AC%EB%A7%88%EC%82%AC/pfbid02icnRVBpS4zrU6Js7T9ExF8oXwV9V1oAw1yBQCi4pLNfUku88QG6rYzmURE3svh6pl/"
+        },
+        {
+          "text": "불학원 INSTAGRAM 바로가기",
+          "href": "https://www.instagram.com/dalmasa01/#"
+        },
+        {
+          "text": "네이버 블로그 바로가기",
+          "href": "https://blog.naver.com/dalmasa1931"
+        }
+      ]
+    },
+    {
+      "id": "foundations",
+      "legacyPath": "/35",
+      "liveUrl": "https://dalmasa.org/35",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/35",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/education/foundations",
+        "en": "/en/education/foundations"
+      },
+      "title": {
+        "ko": "기본교육",
+        "en": "Buddhist Foundations"
+      },
+      "section": "education",
+      "template": "course",
+      "sourceKorean": {
+        "activeMenu": [
+          "기본교육"
+        ],
+        "headings": [
+          "기본교육"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "기본교육"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 불학원 기본교육은",
+              "불교를 알기 쉽게 배워보는",
+              "종단인가 기본교육과정입니다."
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "교육이수 후 수계식을 삼귀의, 오계를 수지하게 됩니다.",
+              "또한 달마사신도회의 구성원으로 기본자격을 지님과 동시에 사찰 봉사활동에 동참할 수 있습니다."
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "교과과정",
+              "불교, 예불, 법회의 의미와 가치, 수행의 종류와 방법 등",
+              "교육일시 및 기간",
+              "주말반 | 매주 토요일 오후 1시~3시",
+              "연 2회 개강 | 상반기 2월, 하반기 9월"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 불학원 기본교육은",
+              "불교를 알기 쉽게 배워보는",
+              "종단인가 기본교육과정입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "교육이수 후 수계식을 통해 삼귀의, 오계를 수지하게 됩니다.",
+              "또한 달마사신도회의 구성원으로 기본자격을 지님과 동시에",
+              "사찰 봉사활동에 동참할 수 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "교과과정",
+              "불교, 예불, 법회의 의미와 가치, 수행의 종류와 방법 등",
+              "교육일시 및 기간",
+              "주말반 | 매주 토요일·일요일 오후 1시~3시",
+              "연 2회 개강 | 상반기 2월, 하반기 9월"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A Jogye Order-recognized introductory course on Buddhism, worship, Dharma services, and methods of practice.",
+        "sectionsEn": [
+          "Who it is for",
+          "Curriculum",
+          "Ordination and community participation",
+          "Saturday class, 1:00–3:00 PM",
+          "Two intakes: February and September"
+        ],
+        "editorial": "Canonicalize the newer mobile wording: Saturday only. The desktop page says Saturday and Sunday, while the 2026 homepage specifically announces a Saturday 1:00 PM opening. Still ask the education office to confirm before production launch."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231110/a31b1492782ba.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 불학원",
+          "href": "https://dalmasa.org/48"
+        },
+        {
+          "text": "기본교육",
+          "href": "https://dalmasa.org/35"
+        },
+        {
+          "text": "불교대학",
+          "href": "https://dalmasa.org/45"
+        },
+        {
+          "text": "경전반",
+          "href": "https://dalmasa.org/46"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "legacyPath": "/36",
+      "liveUrl": "https://dalmasa.org/36",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/37",
+      "sourceExperienceDuplicateOf": "/37",
+      "canonicalPaths": {
+        "ko": "/ko/news",
+        "en": "/en/news"
+      },
+      "title": {
+        "ko": "달마사 소식",
+        "en": "News"
+      },
+      "section": "news",
+      "template": "section-landing",
+      "sourceKorean": {
+        "activeMenu": [
+          "공지사항"
+        ],
+        "headings": [
+          "공지사항"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "공지사항"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "board",
+            "blocks": [
+              "No",
+              "제목",
+              "글쓴이",
+              "작성시간",
+              "조회수",
+              "좋아요",
+              "359",
+              "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내",
+              "달마사",
+              "2026-06-30",
+              "조회수108",
+              "0",
+              "358",
+              "[교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내",
+              "2026-06-06",
+              "조회수195",
+              "357",
+              "[교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내",
+              "조회수170",
+              "356",
+              "[기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내",
+              "조회수861",
+              "355",
+              "[공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표",
+              "2026-05-17",
+              "조회수462",
+              "354",
+              "[공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감",
+              "2026-05-01",
+              "조회수408",
+              "353",
+              "[기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내",
+              "2026-04-12",
+              "조회수695",
+              "352",
+              "[법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내",
+              "2026-04-05",
+              "조회수621",
+              "351",
+              "[교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내",
+              "2026-03-21",
+              "조회수1582",
+              "350",
+              "[기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내",
+              "2026-02-01",
+              "조회수930",
+              "Previous",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "Next"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Current notices, temple stories, volunteer news, and photo galleries from Dalmasa.",
+        "sectionsEn": [
+          "Latest notices",
+          "Temple stories",
+          "Volunteer group",
+          "Gallery",
+          "Search and archive"
+        ],
+        "editorial": "This is a new section landing derived from a live duplicate of /37. Show publication date and translated category/title for each imported item."
+      },
+      "sourceImages": [],
+      "sourceLinks": [
+        {
+          "text": "공지사항",
+          "href": "https://dalmasa.org/37"
+        },
+        {
+          "text": "주요소식",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "달마사 갤러리",
+          "href": "https://dalmasa.org/47"
+        },
+        {
+          "text": "달마사 봉사부",
+          "href": "https://dalmasa.org/39"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=172105862&t=board"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171657250&t=board"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171657231&t=board"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171657189&t=board"
+        },
+        {
+          "text": "[공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171321835&t=board"
+        },
+        {
+          "text": "[공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171248936&t=board"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170807998&t=board"
+        },
+        {
+          "text": "[법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170699304&t=board"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170482786&t=board"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=169798787&t=board"
+        },
+        {
+          "text": "1",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=1"
+        },
+        {
+          "text": "2",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=2"
+        },
+        {
+          "text": "3",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=3"
+        },
+        {
+          "text": "4",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=4"
+        },
+        {
+          "text": "5",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=5"
+        },
+        {
+          "text": "6",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=6"
+        },
+        {
+          "text": "7",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=7"
+        },
+        {
+          "text": "8",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=8"
+        },
+        {
+          "text": "9",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=9"
+        },
+        {
+          "text": "Next",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=10"
+        }
+      ]
+    },
+    {
+      "id": "notices",
+      "legacyPath": "/37",
+      "liveUrl": "https://dalmasa.org/37",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/37",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/news/notices",
+        "en": "/en/news/notices"
+      },
+      "title": {
+        "ko": "공지사항",
+        "en": "Notices"
+      },
+      "section": "news",
+      "template": "archive",
+      "sourceKorean": {
+        "activeMenu": [
+          "공지사항"
+        ],
+        "headings": [
+          "공지사항"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "공지사항"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "board",
+            "blocks": [
+              "No",
+              "제목",
+              "글쓴이",
+              "작성시간",
+              "조회수",
+              "좋아요",
+              "359",
+              "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내",
+              "달마사",
+              "2026-06-30",
+              "조회수108",
+              "0",
+              "358",
+              "[교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내",
+              "2026-06-06",
+              "조회수195",
+              "357",
+              "[교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내",
+              "조회수170",
+              "356",
+              "[기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내",
+              "조회수861",
+              "355",
+              "[공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표",
+              "2026-05-17",
+              "조회수462",
+              "354",
+              "[공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감",
+              "2026-05-01",
+              "조회수408",
+              "353",
+              "[기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내",
+              "2026-04-12",
+              "조회수695",
+              "352",
+              "[법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내",
+              "2026-04-05",
+              "조회수621",
+              "351",
+              "[교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내",
+              "2026-03-21",
+              "조회수1582",
+              "350",
+              "[기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내",
+              "2026-02-01",
+              "조회수930",
+              "Previous",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "Next"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Official announcements for prayer programs, classes, ceremonies, scholarships, and temple operations.",
+        "sectionsEn": [
+          "Current notices",
+          "Categories",
+          "Archive",
+          "Notice detail"
+        ],
+        "editorial": "The live archive has nine pages. Do not claim a complete English article archive unless bodies are translated; expose Korean originals with clearly marked English summaries when necessary."
+      },
+      "sourceImages": [],
+      "sourceLinks": [
+        {
+          "text": "공지사항",
+          "href": "https://dalmasa.org/37"
+        },
+        {
+          "text": "주요소식",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "달마사 갤러리",
+          "href": "https://dalmasa.org/47"
+        },
+        {
+          "text": "달마사 봉사부",
+          "href": "https://dalmasa.org/39"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 제1차 수능·학업 성취 백일기도 동참 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=172105862&t=board"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 경전반 금강경 개강 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171657250&t=board"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 기본교육 개강안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171657231&t=board"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 우란분절 백중 49일 지장기도 동참 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171657189&t=board"
+        },
+        {
+          "text": "[공지] 제1회 달마사 어린이 그림그리기 대회 수상자 발표",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171321835&t=board"
+        },
+        {
+          "text": "[공고] 불기 2570(2026)년 부처님 오신 날 달마사 자인장학회 장학생 모집 - 마감",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=171248936&t=board"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 달마사 부처님 오신 날 봉축 8일기도 동참 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170807998&t=board"
+        },
+        {
+          "text": "[법회] 불기 2570(2026)년 달마사 4월 선지식초청 일요법회 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170699304&t=board"
+        },
+        {
+          "text": "[교육] 불기 2570(2026)년 달마사 불학원 교양강좌 '천수경' 개강 안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170482786&t=board"
+        },
+        {
+          "text": "[기도] 불기 2570(2026)년 달마사 수능·학업성취기도 동참안내",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=169798787&t=board"
+        },
+        {
+          "text": "1",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=1"
+        },
+        {
+          "text": "2",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=2"
+        },
+        {
+          "text": "3",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=3"
+        },
+        {
+          "text": "4",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=4"
+        },
+        {
+          "text": "5",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=5"
+        },
+        {
+          "text": "6",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=6"
+        },
+        {
+          "text": "7",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=7"
+        },
+        {
+          "text": "8",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=8"
+        },
+        {
+          "text": "9",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=9"
+        },
+        {
+          "text": "Next",
+          "href": "https://dalmasa.org/37/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=10"
+        }
+      ]
+    },
+    {
+      "id": "stories",
+      "legacyPath": "/38",
+      "liveUrl": "https://dalmasa.org/38",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/38",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/news/stories",
+        "en": "/en/news/stories"
+      },
+      "title": {
+        "ko": "주요소식",
+        "en": "Temple Stories"
+      },
+      "section": "news",
+      "template": "archive",
+      "sourceKorean": {
+        "activeMenu": [
+          "주요소식"
+        ],
+        "headings": [
+          "주요소식"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "주요소식"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "board",
+            "blocks": [
+              "Previous",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "Next"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "달마사 BLOG 바로가기"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Reports and photographs from Dalmasa ceremonies, prayers, Dharma services, and community life.",
+        "sectionsEn": [
+          "Featured stories",
+          "Archive",
+          "Naver Blog"
+        ],
+        "editorial": "The live page's newest visible story is dated 2025-10-05 and most others are older. Preserve publication dates and avoid presenting old reports as upcoming events."
+      },
+      "sourceImages": [],
+      "sourceLinks": [
+        {
+          "text": "공지사항",
+          "href": "https://dalmasa.org/37"
+        },
+        {
+          "text": "주요소식",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "달마사 갤러리",
+          "href": "https://dalmasa.org/47"
+        },
+        {
+          "text": "달마사 봉사부",
+          "href": "https://dalmasa.org/39"
+        },
+        {
+          "text": "공지 달마사 신묘장구대다라니 천일대정진 100일차 독송기도 봉행 0 0 2025-10-05 조회 797",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=168135863&t=board"
+        },
+        {
+          "text": "공지 불기 2569(2025)년 달마사 부처님 오신 날 0 0 2025-05-09 조회 1064",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=163629536&t=board"
+        },
+        {
+          "text": "공지 불기 2568(2024)년 달마사 정초합동 천도재 봉행 0 0 2024-02-24 조회 1549",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=18326892&t=board"
+        },
+        {
+          "text": "공지 불기 2568(2024)년 2월 선지식초청 일요법회 - 원통스님 0 0 2024-02-18 조회 1756",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=18138111&t=board"
+        },
+        {
+          "text": "공지 [신중기도] 불기2566년 음력2월 신중기도 봉행(22.03.03) 0 0 2023-12-14 조회 1242",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17261960&t=board"
+        },
+        {
+          "text": "공지 [동지기도] 동지기도 사진 0 0 2023-12-14 조회 1247",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17261949&t=board"
+        },
+        {
+          "text": "공지 [천일기도] 2차 천일기도 700일 관음예참기도 사진 0 0 2023-12-14 조회 1079",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17261928&t=board"
+        },
+        {
+          "text": "공지 [추모다례재] 창건주 유심스님 추모다례재 사진 0 0 2023-12-14 조회 969",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17261908&t=board"
+        },
+        {
+          "text": "공지 [일천배 정진기도] 극락전 불사 원만회향을 위한 일천배 정진기도 사진 0 0 2023-12-14 조회 839",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17261889&t=board"
+        },
+        {
+          "text": "1",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=1"
+        },
+        {
+          "text": "2",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=2"
+        },
+        {
+          "text": "3",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=3"
+        },
+        {
+          "text": "4",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=4"
+        },
+        {
+          "text": "5",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=5"
+        },
+        {
+          "text": "6",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=6"
+        },
+        {
+          "text": "7",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=7"
+        },
+        {
+          "text": "8",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=8"
+        },
+        {
+          "text": "9",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=9"
+        },
+        {
+          "text": "Next",
+          "href": "https://dalmasa.org/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=10"
+        },
+        {
+          "text": "달마사 BLOG 바로가기",
+          "href": "https://m.blog.naver.com/dalmasa1931?tab=1"
+        }
+      ]
+    },
+    {
+      "id": "volunteer",
+      "legacyPath": "/39",
+      "liveUrl": "https://dalmasa.org/39",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/39",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/news/volunteer",
+        "en": "/en/news/volunteer"
+      },
+      "title": {
+        "ko": "달마사 봉사부",
+        "en": "Volunteer Group"
+      },
+      "section": "news",
+      "template": "story-cta",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 봉사부"
+        ],
+        "headings": [
+          "참여마당"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "참여마당"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "board",
+            "blocks": [
+              "Previous",
+              "1",
+              "2",
+              "3",
+              "Next"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A dedicated page for Dalmasa's volunteer community, its work, participation expectations, and contact path.",
+        "sectionsEn": [
+          "What the volunteer group does",
+          "Ways to help",
+          "Who can join",
+          "Orientation and schedule",
+          "Contact the temple"
+        ],
+        "editorial": "The live page is titled Volunteer Group but its heading says Participation Board and its visible posts are mostly Buddhist education posts. Do not reuse that mismatched board as volunteer proof; request current volunteer information."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20240111/768981e5e74c8.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "공지사항",
+          "href": "https://dalmasa.org/37"
+        },
+        {
+          "text": "주요소식",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "달마사 갤러리",
+          "href": "https://dalmasa.org/47"
+        },
+        {
+          "text": "달마사 봉사부",
+          "href": "https://dalmasa.org/39"
+        },
+        {
+          "text": "공지 달마사 불교대학 홍보 달마사 불교대학에서는 -기본교육-불교대학 -경전반교육이 있습니다. 불교에대해 공부해 봅시다. 2 0 현선우 2025-01-08 조회 769",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=140338358&t=board"
+        },
+        {
+          "text": "공지 불교대학 1기 입학식 및 개강 안녕하세요. 조계종 인가 과정 달마사 불교대학 1기 모집 및 입학식 안내 1 0 현선우 2024-03-05 조회 1125",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=18306568&t=board"
+        },
+        {
+          "text": "공지 달마사 - 05기 수계식 2탄 수계식 꽃중에 꽃 산화~~ 불자로써의 태어남을 기리다 불. 법. 승 삼보에 귀의합니다. 청년 - 우리 수계증 받았어요~~~~ 수계식 - 단체사진 0 0 현선우 2024-03-05 조회 727",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=18306025&t=board"
+        },
+        {
+          "text": "공지 달마사 - 05기 기본교육 수계식 수계식 이모저모 보시죠!! 계사 주지스님. 정정함을 밝히는 훈향 수계식의꽃 - 연 비 수계증 수여 0 0 현선우 2024-03-05 조회 683",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=18305854&t=board"
+        },
+        {
+          "text": "1",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=1"
+        },
+        {
+          "text": "2",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=2"
+        },
+        {
+          "text": "3",
+          "href": "https://dalmasa.org/39/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=3"
+        }
+      ]
+    },
+    {
+      "id": "memorial",
+      "legacyPath": "/40",
+      "liveUrl": "https://dalmasa.org/40",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/41",
+      "sourceExperienceDuplicateOf": "/41",
+      "canonicalPaths": {
+        "ko": "/ko/memorial",
+        "en": "/en/memorial"
+      },
+      "title": {
+        "ko": "봉안당",
+        "en": "Memorial Hall"
+      },
+      "section": "memorial",
+      "template": "section-landing",
+      "sourceKorean": {
+        "activeMenu": [
+          "봉안당 소개"
+        ],
+        "headings": [
+          "봉안당 소개",
+          "국립현충원 옆 풍수지리적 명당",
+          "역사 깊은 전통사찰과 봉안시설",
+          "자세한 사항은 봉안당에 문의하세요. 02-822-8771"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "봉안당 소개"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "국립현충원 옆 풍수지리적 명당",
+              "서울 지역 어디에서나 대중교통을 이용해 오실 수 있는 지리적 접근성이 뛰어난 달마사 추모관(영일당, 영월당)은 한강물을 마시는 거북이 자손들을 번창케하고 한강의 용신이 유택을 지켲는 천하명당으로 2011년 12월, 영산전 전각에 봉안당을 조성한 후 2012년 4월 동작구에 봉안시설 설치신고(제2호)를 마쳤습니다. 이후 2022년 중창불사를 통해 기존의 봉안당을 영일당으로 개칭하고 영월당을 추가 조성하였습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "역사 깊은 전통사찰과 봉안시설",
+              "대한불교조계종의 직할교구에 소속된 사찰로 지난 1988년 전통사찰 제13호에 지정되었으며, 2012년 4월 동작구에 종교단체 봉안당 설치신고를 마친 영속성과 안전성이 보장되어 있는 봉안시설입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자세한 사항은 봉안당에 문의하세요. 02-822-8771"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A dignified introduction to Dalmasa's memorial hall, enshrinement guidance, and moderated remembrance space.",
+        "sectionsEn": [
+          "About the memorial hall",
+          "Enshrinement guide",
+          "Remembrance room",
+          "Book a consultation"
+        ],
+        "editorial": "This is a new section landing derived from a live duplicate of /41. Do not use urgency, unverified prices, or ambiguous phone ownership."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231204/e2981325d6084.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231204/aaa0dece97ca7.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "봉안당 소개",
+          "href": "https://dalmasa.org/41"
+        },
+        {
+          "text": "봉안 안내",
+          "href": "https://dalmasa.org/42"
+        },
+        {
+          "text": "추모의 방",
+          "href": "https://dalmasa.org/43"
+        }
+      ]
+    },
+    {
+      "id": "memorial-about",
+      "legacyPath": "/41",
+      "liveUrl": "https://dalmasa.org/41",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/41",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/memorial/about",
+        "en": "/en/memorial/about"
+      },
+      "title": {
+        "ko": "봉안당 소개",
+        "en": "About the Memorial Hall"
+      },
+      "section": "memorial",
+      "template": "story-facilities",
+      "sourceKorean": {
+        "activeMenu": [
+          "봉안당 소개"
+        ],
+        "headings": [
+          "봉안당 소개",
+          "국립현충원 옆 풍수지리적 명당",
+          "역사 깊은 전통사찰과 봉안시설",
+          "자세한 사항은 봉안당에 문의하세요. 02-822-8771"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "봉안당 소개"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "국립현충원 옆 풍수지리적 명당",
+              "서울 지역 어디에서나 대중교통을 이용해 오실 수 있는 지리적 접근성이 뛰어난 달마사 추모관(영일당, 영월당)은 한강물을 마시는 거북이 자손들을 번창케하고 한강의 용신이 유택을 지켲는 천하명당으로 2011년 12월, 영산전 전각에 봉안당을 조성한 후 2012년 4월 동작구에 봉안시설 설치신고(제2호)를 마쳤습니다. 이후 2022년 중창불사를 통해 기존의 봉안당을 영일당으로 개칭하고 영월당을 추가 조성하였습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "역사 깊은 전통사찰과 봉안시설",
+              "대한불교조계종의 직할교구에 소속된 사찰로 지난 1988년 전통사찰 제13호에 지정되었으며, 2012년 4월 동작구에 종교단체 봉안당 설치신고를 마친 영속성과 안전성이 보장되어 있는 봉안시설입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자세한 사항은 봉안당에 문의하세요. 02-822-8771"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Yeongildang and Yeongwoldang are traditional-style memorial facilities beside Seoul National Cemetery, registered with Dongjak-gu in 2012 and expanded in 2022.",
+        "sectionsEn": [
+          "Location beside Seoul National Cemetery",
+          "History and registration",
+          "Yeongildang and Yeongwoldang",
+          "Consultation"
+        ],
+        "editorial": "Translate geomantic claims as the temple's tradition or belief, not an independently proven guarantee. Correct obvious Korean typos only with an editorial note."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231204/e2981325d6084.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231204/aaa0dece97ca7.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "봉안당 소개",
+          "href": "https://dalmasa.org/41"
+        },
+        {
+          "text": "봉안 안내",
+          "href": "https://dalmasa.org/42"
+        },
+        {
+          "text": "추모의 방",
+          "href": "https://dalmasa.org/43"
+        }
+      ]
+    },
+    {
+      "id": "enshrinement",
+      "legacyPath": "/42",
+      "liveUrl": "https://dalmasa.org/42",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/42",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/memorial/enshrinement",
+        "en": "/en/memorial/enshrinement"
+      },
+      "title": {
+        "ko": "봉안 안내",
+        "en": "Enshrinement Guide"
+      },
+      "section": "memorial",
+      "template": "guided-inquiry",
+      "sourceKorean": {
+        "activeMenu": [
+          "봉안 안내"
+        ],
+        "headings": [
+          "봉안 안내",
+          "자세한 사항은 달마사 봉안당 사무실에 문의하세요. 02-822-8771"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "봉안 안내"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자세한 사항은 달마사 봉안당 사무실에 문의하세요. 02-822-8771"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A calm step-by-step guide to learning about and arranging memorial enshrinement at Dalmasa.",
+        "sectionsEn": [
+          "Who the facility serves",
+          "Consultation",
+          "Visit and selection",
+          "Documents and appointment",
+          "Enshrinement day",
+          "Ongoing memorial care"
+        ],
+        "editorial": "The live page contains only a decorative image and the number 02-822-8771. Every procedural section is a required content gap; do not invent documents, prices, availability, or eligibility."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231226/934617f171a86.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "봉안당 소개",
+          "href": "https://dalmasa.org/41"
+        },
+        {
+          "text": "봉안 안내",
+          "href": "https://dalmasa.org/42"
+        },
+        {
+          "text": "추모의 방",
+          "href": "https://dalmasa.org/43"
+        }
+      ]
+    },
+    {
+      "id": "remembrance",
+      "legacyPath": "/43",
+      "liveUrl": "https://dalmasa.org/43",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/43",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/memorial/remembrance",
+        "en": "/en/memorial/remembrance"
+      },
+      "title": {
+        "ko": "추모의 방",
+        "en": "Remembrance Room"
+      },
+      "section": "memorial",
+      "template": "moderated-archive",
+      "sourceKorean": {
+        "activeMenu": [
+          "추모의 방"
+        ],
+        "headings": [
+          "추모의 방",
+          "자세한 사항은 봉안당에 문의하세요. 02-822-8771"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "추모의 방"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "고인에게 하고 싶은 이야기를 편지로 쓰는 공간입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "board",
+            "blocks": [
+              "No",
+              "제목",
+              "글쓴이",
+              "작성시간",
+              "조회수",
+              "좋아요",
+              "2",
+              "조부모, 부모님 전 상서",
+              "김형봉",
+              "2023-12-29",
+              "조회수1",
+              "1",
+              "친구에게 쓰는 편지",
+              "달마사",
+              "2023-11-06",
+              "조회수7",
+              "0"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "자세한 사항은 봉안당에 문의하세요. 02-822-8771"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A moderated space for letters and memories addressed to those who have died.",
+        "sectionsEn": [
+          "About the remembrance room",
+          "Privacy and moderation",
+          "Published letters",
+          "How to submit, if enabled"
+        ],
+        "editorial": "The live board exposes two named letters. Do not republish personal names or bodies in the rebuild without explicit permission and a retention/moderation policy."
+      },
+      "sourceImages": [],
+      "sourceLinks": [
+        {
+          "text": "봉안당 소개",
+          "href": "https://dalmasa.org/41"
+        },
+        {
+          "text": "봉안 안내",
+          "href": "https://dalmasa.org/42"
+        },
+        {
+          "text": "추모의 방",
+          "href": "https://dalmasa.org/43"
+        }
+      ]
+    },
+    {
+      "id": "monthly-prayer",
+      "legacyPath": "/44",
+      "liveUrl": "https://dalmasa.org/44",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/44",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/monthly",
+        "en": "/en/prayer/monthly"
+      },
+      "title": {
+        "ko": "월 정기기도",
+        "en": "Monthly Prayer"
+      },
+      "section": "prayer",
+      "template": "schedule-collection",
+      "sourceKorean": {
+        "activeMenu": [
+          "월 정기기도"
+        ],
+        "headings": [
+          "월 정기기도",
+          "신중3일기도",
+          "산신기도",
+          "지장재일기도",
+          "인등기도"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "월 정기기도"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "신중3일기도",
+              "신중(神衆)이란 부처님 법을 지키는 호법선신의 무리를 말합니다. 매월 음력 첫째날부터 3일간 기도 정진하여 가족의 건강과 평안을 성취하시길 바랍니다.",
+              "일시 매월 음력 1일~3일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "산신기도",
+              "산신은 부처님의 도량을 수호하고 인간의 재물, 수명, 복을 관장하고 옹호하는 호법신장이십니다. 달마사 삼성각은 예로부터 기도를 올리면 원하는 발원을 성취했다고 전해져 불자님들의 발길이 끊이지 않습니다. 기도에 동참하셔 사업번창, 길상인연, 속득생남 발원의 뜻을 이루시기 바랍니다.",
+              "일시 매월 넷째 토요일 저녁 6시 30분(하절기) 6시(동절기)",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "지장재일기도",
+              "지장보살은 중생들을 모두 제도하겠다는 원력(願力)을 세우고 보살행을 실천하고 계십니다. 이러한 원력으로 선망조상의 위패를 모시고 재를 통해 극락왕생하시길 바랍니다.",
+              "일시 매월 음력 18일 오전 10시",
+              "장소 대웅전"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "인등기도",
+              "인등(引燈), 자신의 등불을 말합니다. 등불을 밝히는 것은 자신의 어리석음을 벗어나고 밝은 마음을 드러내어 삼독(三毒)의 무명(無明)을 밝히는 수행의 의미를 담고 있습니다.",
+              "달마사 인등은 1인 1등으로 대웅전, 삼성각, 석불에 밝힐 수 있으며, 매월 음력 보름날 축원이 진행됩니다.",
+              "일시 매월 음력 15일 오전 10시",
+              "장소 대웅전"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Four recurring monthly prayer programs for guardian deities, mountain-spirit prayer, Ksitigarbha observance, and individual lanterns.",
+        "sectionsEn": [
+          "Sinjung three-day prayer — lunar 1st–3rd, 10:00 AM",
+          "Mountain-spirit prayer — fourth Saturday, 6:30 PM summer / 6:00 PM winter",
+          "Ksitigarbha observance — lunar 18th, 10:00 AM",
+          "Individual lantern prayer — lunar 15th, 10:00 AM"
+        ],
+        "editorial": "All source venues are Daeungjeon, although the lanterns themselves may be placed in Daeungjeon, Samseonggak, or by the stone Buddha."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/dd56ef6b01999.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/f3968b0c6a984.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/a6a064da7dad2.jpg",
+          "alt": "",
+          "title": ""
+        },
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/e9e4b4459bb68.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    },
+    {
+      "id": "buddhist-college",
+      "legacyPath": "/45",
+      "liveUrl": "https://dalmasa.org/45",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/45",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/education/buddhist-college",
+        "en": "/en/education/buddhist-college"
+      },
+      "title": {
+        "ko": "불교대학",
+        "en": "Buddhist College"
+      },
+      "section": "education",
+      "template": "course",
+      "sourceKorean": {
+        "activeMenu": [
+          "불교대학"
+        ],
+        "headings": [
+          "불교대학"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "불교대학"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "기본교육을 이수한 불자라면",
+              "누구나 동참할 수 있는",
+              "종단인가 전문교육과정입니다."
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "불교에 대한 체계적인 이해와 더불어",
+              "불교문화, 기도, 수행, 봉사 등 신행활동을 돕는",
+              "실천 중심의 교육으로 진행됩니다."
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "교과과정",
+              "부처님의 생애, 불교교리, 불교사, 불교의식 등",
+              "교육기간",
+              "매년 3월 ~ 11월",
+              "(전년도 11월부터 접수 가능)"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "기본교육을 이수한 불자라면 누구나 동참할 수 있는",
+              "종단인가 전문교육과정입니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "불교에 대한 체계적인 이해와 더불어",
+              "불교문화, 기도, 수행, 봉사 등 신행활동을 돕는",
+              "실천 중심의 교육으로 진행됩니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "교과과정",
+              "부처님의 생애, 불교교리, 불교사, 불교의식 등",
+              "교육기간",
+              "매년 3월 ~ 11월",
+              "(전년도 11월부터 접수 가능)"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A Jogye Order-recognized professional course for people who have completed Buddhist Foundations, focused on doctrine, culture, practice, ritual, and service.",
+        "sectionsEn": [
+          "Eligibility: Buddhist Foundations graduates",
+          "Curriculum",
+          "March–November",
+          "Applications from the preceding November"
+        ],
+        "editorial": "Mobile and desktop facts agree. Add actual weekday/time, tuition or donation, intake status, and application method after education-office verification."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/fced1176a54fd.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 불학원",
+          "href": "https://dalmasa.org/48"
+        },
+        {
+          "text": "기본교육",
+          "href": "https://dalmasa.org/35"
+        },
+        {
+          "text": "불교대학",
+          "href": "https://dalmasa.org/45"
+        },
+        {
+          "text": "경전반",
+          "href": "https://dalmasa.org/46"
+        }
+      ]
+    },
+    {
+      "id": "sutra-study",
+      "legacyPath": "/46",
+      "liveUrl": "https://dalmasa.org/46",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/46",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/education/sutra-study",
+        "en": "/en/education/sutra-study"
+      },
+      "title": {
+        "ko": "경전반",
+        "en": "Sutra Study"
+      },
+      "section": "education",
+      "template": "course",
+      "sourceKorean": {
+        "activeMenu": [
+          "경전반"
+        ],
+        "headings": [
+          "경전반"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "경전반"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "불교대학 졸업생들을 위해 개설된 반으로 경전을 통해 부처님의 말씀을 배우는 심화과정입니다."
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "교과과정",
+              "천수경 / 금강경",
+              "교육기간",
+              "3개월",
+              "개강일자",
+              "천수경 : 2026년 4월 ~ 7월 예정",
+              "금강경 : 2026년 8월 ~ 11월 예정"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "불교대학 졸업생을 위해 개설된 경전을 통해 부처님의 말씀을 배우는 심화과정입니다.",
+              "명상에 관심있는 신도라면 누구나 동참할 수 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "교과과정",
+              "천수경 / 금강경",
+              "교육기간",
+              "3~4개월",
+              "개강일자",
+              "천수경 : 2026년 4월 ~ 7월 예정",
+              "금강경 : 2026년 8월 ~ 11월 예정"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Advanced study of the Thousand Hands Sutra and Diamond Sutra for graduates of Dalmasa's Buddhist College.",
+        "sectionsEn": [
+          "Eligibility",
+          "Thousand Hands Sutra",
+          "Diamond Sutra",
+          "Three-month course",
+          "2026 course windows"
+        ],
+        "editorial": "Canonicalize the newer, conservative mobile wording: Buddhist College graduates and three months. Desktop adds that any member interested in meditation may join and says 3–4 months; do not publish those additions unless the education office confirms them."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231109/a9a70524bdc56.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 불학원",
+          "href": "https://dalmasa.org/48"
+        },
+        {
+          "text": "기본교육",
+          "href": "https://dalmasa.org/35"
+        },
+        {
+          "text": "불교대학",
+          "href": "https://dalmasa.org/45"
+        },
+        {
+          "text": "경전반",
+          "href": "https://dalmasa.org/46"
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "legacyPath": "/47",
+      "liveUrl": "https://dalmasa.org/47",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/47",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/news/gallery",
+        "en": "/en/news/gallery"
+      },
+      "title": {
+        "ko": "달마사 갤러리",
+        "en": "Gallery"
+      },
+      "section": "news",
+      "template": "gallery",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 갤러리"
+        ],
+        "headings": [
+          "달마사 갤러리"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 갤러리"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "board",
+            "blocks": [
+              "Previous",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "Next"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A captioned archive of photographs and videos from Dalmasa prayer services and ceremonies.",
+        "sectionsEn": [
+          "Featured gallery",
+          "Albums",
+          "Archive",
+          "Accessible lightbox"
+        ],
+        "editorial": "The live archive spans nine pages but visible item titles are old and some contain stray punctuation. Preserve original dates, add descriptive captions and alt text, and distinguish photos from videos."
+      },
+      "sourceImages": [],
+      "sourceLinks": [
+        {
+          "text": "공지사항",
+          "href": "https://dalmasa.org/37"
+        },
+        {
+          "text": "주요소식",
+          "href": "https://dalmasa.org/38"
+        },
+        {
+          "text": "달마사 갤러리",
+          "href": "https://dalmasa.org/47"
+        },
+        {
+          "text": "달마사 봉사부",
+          "href": "https://dalmasa.org/39"
+        },
+        {
+          "text": "공지 신축년3월 산신기도 법회_()_ 1 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045376&t=board"
+        },
+        {
+          "text": "공지 신축년 3월 초하루 신중기도 법회_()_ 1 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045331&t=board"
+        },
+        {
+          "text": "공지 신축년 3월 초하루 신중기도법회_()_ 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045316&t=board"
+        },
+        {
+          "text": "공지 신축년3월 회주스님과 함께한 관음재일 기도 법회_()_ 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045305&t=board"
+        },
+        {
+          "text": "공지 3월1일 지장재일 기도 법회 동영상입니다_()_ 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045296&t=board"
+        },
+        {
+          "text": "공지 신축년 2월 산신기도 법회 스켓치 _()- 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045287&t=board"
+        },
+        {
+          "text": "공지 신축년 인등기도 동안거해제정월대보름 정초합동천도재 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045274&t=board"
+        },
+        {
+          "text": "공지 신축년 1월30일 지장재일 법회_()_ 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045233&t=board"
+        },
+        {
+          "text": "공지 신축년 1월24일 극락전 부처님 이운식 모습~()~ 0 0",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=17045195&t=board"
+        },
+        {
+          "text": "1",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=1"
+        },
+        {
+          "text": "2",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=2"
+        },
+        {
+          "text": "3",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=3"
+        },
+        {
+          "text": "4",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=4"
+        },
+        {
+          "text": "5",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=5"
+        },
+        {
+          "text": "6",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=6"
+        },
+        {
+          "text": "7",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=7"
+        },
+        {
+          "text": "8",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=8"
+        },
+        {
+          "text": "9",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=9"
+        },
+        {
+          "text": "Next",
+          "href": "https://dalmasa.org/47/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=10"
+        }
+      ]
+    },
+    {
+      "id": "academy",
+      "legacyPath": "/48",
+      "liveUrl": "https://dalmasa.org/48",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/48",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/education/academy",
+        "en": "/en/education/academy"
+      },
+      "title": {
+        "ko": "달마사 불학원",
+        "en": "Dalmasa Buddhist Academy"
+      },
+      "section": "education",
+      "template": "education-overview",
+      "sourceKorean": {
+        "activeMenu": [
+          "달마사 불학원"
+        ],
+        "headings": [
+          "달마사 불학원"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사 불학원"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "button",
+            "blocks": [
+              "불학원FACEBOOK불학원INSTAGRAM네이버블로그 바로가기"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "달마사에서는 불교를 알기쉽게 배워보는 기본교육을 비롯하여",
+              "전문교육과정인 불교대학, 경전반을 운영하고 있습니다."
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "button",
+            "blocks": [
+              "불학원 FACEBOOK 바로가기불학원 INSTAGRAM 바로가기네이버 블로그 바로가기"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "Dalmasa Buddhist Academy operates introductory foundations, Buddhist College, and sutra-study programs.",
+        "sectionsEn": [
+          "Learning path",
+          "Buddhist Foundations",
+          "Buddhist College",
+          "Sutra Study",
+          "Current enrollment",
+          "Official social channels"
+        ],
+        "editorial": "The live page provides only a short sentence, one image, and Facebook/Instagram/Naver links. Make the onsite course records authoritative and use social media as supplementary."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20231110/a31b1492782ba.jpg",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마사 불학원",
+          "href": "https://dalmasa.org/48"
+        },
+        {
+          "text": "기본교육",
+          "href": "https://dalmasa.org/35"
+        },
+        {
+          "text": "불교대학",
+          "href": "https://dalmasa.org/45"
+        },
+        {
+          "text": "경전반",
+          "href": "https://dalmasa.org/46"
+        },
+        {
+          "text": "불학원FACEBOOK",
+          "href": "https://www.facebook.com/people/%EB%8B%AC%EB%A7%88%EC%82%AC/pfbid02icnRVBpS4zrU6Js7T9ExF8oXwV9V1oAw1yBQCi4pLNfUku88QG6rYzmURE3svh6pl/"
+        },
+        {
+          "text": "불학원INSTAGRAM",
+          "href": "https://www.instagram.com/dalmasa01/#"
+        },
+        {
+          "text": "네이버블로그 바로가기",
+          "href": "https://blog.naver.com/dalmasa1931"
+        },
+        {
+          "text": "불학원 FACEBOOK 바로가기",
+          "href": "https://www.facebook.com/people/%EB%8B%AC%EB%A7%88%EC%82%AC/pfbid02icnRVBpS4zrU6Js7T9ExF8oXwV9V1oAw1yBQCi4pLNfUku88QG6rYzmURE3svh6pl/"
+        },
+        {
+          "text": "불학원 INSTAGRAM 바로가기",
+          "href": "https://www.instagram.com/dalmasa01/#"
+        },
+        {
+          "text": "네이버 블로그 바로가기",
+          "href": "https://blog.naver.com/dalmasa1931"
+        }
+      ]
+    },
+    {
+      "id": "dharani-1000-day",
+      "legacyPath": "/49",
+      "liveUrl": "https://dalmasa.org/49",
+      "liveStatus": 200,
+      "livePageTitle": "달마사",
+      "liveCanonical": "http://dalmasa.org/49",
+      "sourceExperienceDuplicateOf": null,
+      "canonicalPaths": {
+        "ko": "/ko/prayer/dharani-1000-day",
+        "en": "/en/prayer/dharani-1000-day"
+      },
+      "title": {
+        "ko": "신묘장구대다라니 천일대정진기도",
+        "en": "1,000-Day Great Dharani Practice"
+      },
+      "section": "prayer",
+      "template": "program",
+      "sourceKorean": {
+        "activeMenu": [
+          "신묘장구대다라니 천일대정진기도"
+        ],
+        "headings": [
+          "신묘장구대다라니 천일대정진기도"
+        ],
+        "contentBlocks": [
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "신묘장구대다라니 천일대정진기도"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "33번의 신묘장구대다라니 경전 사경의 공덕이 독송으로 이어지는 진심과 정성의 기도!",
+              "마음과 경전이 하나되게 하는 1000일의 여정!",
+              "신묘장구대다라니 천일대정진기도 동참 안내"
+            ]
+          },
+          {
+            "variant": "desktop",
+            "widgetType": "text",
+            "blocks": [
+              "🔸동참 방법🔸",
+              "달마사에서 발행한 신묘장구대다라니 사경집을 지참한 누구나 동참 가능합니다.",
+              "매 100일 회향 때 마다 독송한 신묘장구대다라니 사경집은",
+              "대웅전 석가모니불 상단에 봉안, 1000일 기도 회향 시 소지 합니다.",
+              "🔸동참금🔸",
+              "기도 동참 : 1만원",
+              "기도 동참 시 사경집과 사경펜을 제공합니다.",
+              "사경집과 사경펜은 원하시는 수량만큼 추가구매 가능합니다.",
+              "설판 동참 : 5만원 이상 자율 동참",
+              "기도 당일 개인 축원을 올려드립니다.",
+              "특별법보시 동참 : 500만원 (500권 기준)",
+              "신묘장구대다라니 사경집 후면에 동참가족(최대 2인)의 성함을 담아드립니다.",
+              "매 100일 회향일 마다 가족 축원을 올려드립니다.",
+              "🔸기도일정🔸",
+              "🔹입재일🔹",
+              "2025년 6월 28일(토) 오후 2시",
+              "🔹100일🔹",
+              "2025년 10월 02일(목) 오후 2시",
+              "🔹200일🔹",
+              "2026년 01월 13일(화) 오후 2시",
+              "🔹300일🔹",
+              "2026년 04월 23일(목) 오후 2시",
+              "🔹400일🔹",
+              "2026년 08월 01일(토) 오후 2시",
+              "🔹500일🔹",
+              "2026년 11월 09일(월) 오후 2시",
+              "🔹600일🔹",
+              "2027년 02월 17일(수) 오후 2시",
+              "🔹700일🔹",
+              "2027년 05월 28일(금) 오후 2시",
+              "🔹800일🔹",
+              "2027년 09월 05일(일) 오후 2시",
+              "🔹900일🔹",
+              "2027년 12월 14일(화) 오후 2시",
+              "🔹회향일🔹",
+              "2028년 03월 23일(목) 오후 2시"
+            ]
+          },
+          {
+            "variant": "mobile",
+            "widgetType": "text",
+            "blocks": [
+              "생활이 수행과 기도가 되는",
+              "달마행자 수행기도"
+            ]
+          }
+        ]
+      },
+      "englishCopyGuidance": {
+        "summaryEn": "A 1,000-day Great Dharani copying and recitation practice running from June 28, 2025 through March 23, 2028, with gatherings every 100 days.",
+        "sectionsEn": [
+          "How to participate",
+          "Participation: KRW 10,000",
+          "Seolpan offering: voluntary from KRW 50,000",
+          "Special Dharma-material offering: KRW 5,000,000 for 500 books",
+          "100-day schedule",
+          "What happens to completed copybooks"
+        ],
+        "editorial": "Preserve every published date and weekday; all checked weekdays are internally correct. Clarify whether each fee is one-time or per gathering and how to register before presenting an online action."
+      },
+      "sourceImages": [
+        {
+          "src": "https://cdn.imweb.me/thumbnail/20251005/8440de1a52334.png",
+          "alt": "",
+          "title": ""
+        }
+      ],
+      "sourceLinks": [
+        {
+          "text": "달마행자",
+          "href": "https://dalmasa.org/25"
+        },
+        {
+          "text": "신묘장구대다라니 천일대정진기도",
+          "href": "https://dalmasa.org/49"
+        },
+        {
+          "text": "상시기도",
+          "href": "https://dalmasa.org/26"
+        },
+        {
+          "text": "월 정기기도",
+          "href": "https://dalmasa.org/44"
+        },
+        {
+          "text": "특별기도",
+          "href": "https://dalmasa.org/27"
+        },
+        {
+          "text": "재(齋) 및 제사(祭祀)",
+          "href": "https://dalmasa.org/28"
+        },
+        {
+          "text": "공양",
+          "href": "https://dalmasa.org/29"
+        }
+      ]
+    }
+  ],
+  "exactLegacyRouteOrder": [
+    "/index",
+    "/contact",
+    "/18",
+    "/19",
+    "/20",
+    "/21",
+    "/22",
+    "/23",
+    "/24",
+    "/25",
+    "/26",
+    "/27",
+    "/28",
+    "/29",
+    "/31",
+    "/32",
+    "/33",
+    "/34",
+    "/35",
+    "/36",
+    "/37",
+    "/38",
+    "/39",
+    "/40",
+    "/41",
+    "/42",
+    "/43",
+    "/44",
+    "/45",
+    "/46",
+    "/47",
+    "/48",
+    "/49"
+  ]
+}

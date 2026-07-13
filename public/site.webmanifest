@@ -1,0 +1,25 @@
+{
+  "name": "달마사 · Dalmasa Temple",
+  "short_name": "달마사",
+  "description": "서울 흑석동 서달산의 대한불교조계종 전통사찰 달마사",
+  "lang": "ko",
+  "start_url": "/ko",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f2e7",
+  "theme_color": "#7a3f20",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
