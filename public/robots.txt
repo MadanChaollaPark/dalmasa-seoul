@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dalmasa.org/sitemap.xml
+Sitemap: https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site/sitemap.xml

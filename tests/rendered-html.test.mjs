@@ -5,7 +5,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
-const canonicalRequestOrigin = "https://dalmasa.org";
+const canonicalRequestOrigin = "https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site";
 const localePattern = /^\/(ko|en)(?:\/|$)/;
 const expectedPageCountPerLocale = 34;
 const legacyDestinations = {

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { PageView } from "@/app/components/PageView";
 import { PAGE_RECORDS, getLocalizedPage, localizePage, type Locale } from "@/lib/site-content";
 
-const SITE_URL = "https://dalmasa.org";
+const SITE_URL = "https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site";
 
 function routePath(slug?: string[]) {
   return slug?.length ? `/${slug.join("/")}` : "/";

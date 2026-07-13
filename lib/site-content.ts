@@ -212,7 +212,7 @@ export const HERO_LIBRARY: Readonly<Record<SiteSection, HeroImage>> = Object.fre
 });
 
 export const SITE_FACTS = Object.freeze({
-  canonicalOrigin: "https://dalmasa.org",
+  canonicalOrigin: "https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site",
   timeZone: "Asia/Seoul",
   name: L("대한불교조계종 흑석동 달마사", "Dalmasa Temple, Heukseok-dong"),
   affiliation: L("대한불교조계종", "Jogye Order of Korean Buddhism"),

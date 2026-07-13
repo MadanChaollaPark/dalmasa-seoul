@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { PAGE_RECORDS } from "@/lib/site-content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://dalmasa.org";
+  const base = "https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site";
   const lastModified = new Date("2026-07-13T00:00:00+09:00");
   return (["ko", "en"] as const).flatMap((locale) => PAGE_RECORDS.map((page) => ({
     url: `${base}/${locale}${page.path === "/" ? "" : page.path}`,
@@ -17,4 +17,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   })));
 }
-

@@ -23,7 +23,7 @@ This checklist is the release contract for the rebuilt Dalmasa site. Items marke
 ## Search, sharing, and site identity
 
 - [x] **Automated:** Every page has a non-empty, page-specific title and meta description.
-- [x] **Automated:** Every canonical URL is absolute, HTTPS, and on the public Dalmasa host.
+- [x] **Automated:** Every canonical URL is absolute, HTTPS, and on the current public deployment host.
 - [x] **Automated:** Titles, descriptions, and canonical URLs are unique within each locale.
 - [x] **Automated:** `robots.txt` exists, allows public pages, and references the HTTPS sitemap.
 - [x] **Automated:** `sitemap.xml` exists and contains every Korean and English canonical page.

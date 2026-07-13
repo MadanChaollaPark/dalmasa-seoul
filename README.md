@@ -20,6 +20,10 @@ Some schedule and phone details conflict across the current source website. The
 prototype labels those items for confirmation instead of silently choosing one.
 It does not replace the official site at [dalmasa.org](https://dalmasa.org).
 
+## Live site
+
+[Open the public Korean–English redesign](https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site/ko)
+
 ## Local development
 
 Requires Node.js 22.13 or newer.

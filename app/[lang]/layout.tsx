@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dalmasa.org"),
+  metadataBase: new URL("https://dalmasa-seoul-bilingual.chaollapark.chatgpt.site"),
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -31,4 +31,3 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (lang !== "ko" && lang !== "en") notFound();
   return <html lang={lang}><body>{children}</body></html>;
 }
-
